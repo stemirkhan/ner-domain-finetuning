@@ -1,0 +1,82 @@
+{
+  "status": "verified_from_published_files",
+  "sets": {
+    "crm/train": {
+      "documents": 5000,
+      "secret_entities": 6360,
+      "by_type": {
+        "INDIVIDUAL_DISCOUNT": 1035,
+        "NEGOTIATION_LIMIT": 1100,
+        "INTERNAL_MARGIN": 1085,
+        "RETRO_BONUS": 1035,
+        "PAYMENT_TERMS": 1055,
+        "PRIVATE_PRICE": 1050
+      },
+      "without_secret_entities": 1250,
+      "families": 500,
+      "sha256": "a8680889b69a58aee07283bfc61ef52f870f72f717d5ac1cc6fd67527c385605"
+    },
+    "crm/dev": {
+      "documents": 500,
+      "secret_entities": 640,
+      "by_type": {
+        "INDIVIDUAL_DISCOUNT": 110,
+        "NEGOTIATION_LIMIT": 110,
+        "RETRO_BONUS": 100,
+        "PRIVATE_PRICE": 105,
+        "PAYMENT_TERMS": 105,
+        "INTERNAL_MARGIN": 110
+      },
+      "without_secret_entities": 125,
+      "families": 50,
+      "sha256": "5c71a99cb44b659f2fc50e959c78914e683fce204dbdfe381ebe433a5c8f231f"
+    },
+    "crm/test": {
+      "documents": 1000,
+      "secret_entities": 1275,
+      "by_type": {
+        "RETRO_BONUS": 205,
+        "PRIVATE_PRICE": 225,
+        "PAYMENT_TERMS": 220,
+        "INDIVIDUAL_DISCOUNT": 205,
+        "INTERNAL_MARGIN": 205,
+        "NEGOTIATION_LIMIT": 215
+      },
+      "without_secret_entities": 250,
+      "families": 100,
+      "sha256": "d06f34befb2db819eef3106c1aa1e0f99f5b53c0c9690aaeabeda37026870601"
+    },
+    "long/test": {
+      "documents": 1000,
+      "secret_entities": 480,
+      "by_type": {
+        "PRIVATE_PRICE": 84,
+        "NEGOTIATION_LIMIT": 84,
+        "INDIVIDUAL_DISCOUNT": 84,
+        "RETRO_BONUS": 84,
+        "PAYMENT_TERMS": 72,
+        "INTERNAL_MARGIN": 72
+      },
+      "without_secret_entities": 520,
+      "families": 50,
+      "sha256": "ba52efd2ab5b24caebe4903675e3fc391899e382fc69ddfc2b0595e2f0c3cefb"
+    },
+    "long/pilot": {
+      "documents": 8,
+      "secret_entities": 4,
+      "by_type": {
+        "PRIVATE_PRICE": 4
+      },
+      "without_secret_entities": 4,
+      "families": 1,
+      "sha256": "e6d4f914b2457675db51d1bc09ecf78fc04d46f64634ae518c32145a67186f07"
+    },
+    "teacher/train": {
+      "documents": 5000,
+      "same_train_texts_and_order": true,
+      "labels": "hard_teacher_labels",
+      "sha256": "67e7dbfa40849563da432376107e72d7a4ea79faec30892da9af26a023cf9bf9"
+    }
+  },
+  "scope": "IDs/counts/character offsets/teacher alignment, not independent expert annotation"
+}

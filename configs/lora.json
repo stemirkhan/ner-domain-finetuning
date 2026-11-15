@@ -1,0 +1,13 @@
+{
+  "mode": "lora",
+  "seed": 20261114,
+  "num_epochs": 3,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "precision": "bf16",
+  "encoder_lr": 0.0002,
+  "task_lr": 0.0002,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_encoded_tokens": 1024
+}

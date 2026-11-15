@@ -1,0 +1,119 @@
+{
+  "scope": "Selected original experiment implementation; separate from the portable educational recipe",
+  "files": [
+    {
+      "file": "experiments/recorded-source/gliner-training/common.py",
+      "source_id": "gliner-training/common.py",
+      "sha256": "7d4a53ff1fd0dbe85b9749f482a2e329c8fa39634dfb32f7d333dd67b523c43e",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-training/training.py",
+      "source_id": "gliner-training/training.py",
+      "sha256": "6fd3a4a2218edcb127549adddd581cfc8500f1447553fb742f2dfe7de6688143",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-training/evaluate.py",
+      "source_id": "gliner-training/evaluate.py",
+      "sha256": "0654b63088fec8367f9aee54c39973d9b46fa8a115b2ec321c5e1e0a5416ae96",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-training/benchmark.py",
+      "source_id": "gliner-training/benchmark.py",
+      "sha256": "76de987515223d1c651468445213535da7a01af52124a7dc2128abe5f722cae8",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-training/metrics.py",
+      "source_id": "gliner-training/metrics.py",
+      "sha256": "271f7b27a16882f1a450f236cf117e2d22708c35e3964dd24c80811cefde0e34",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/common.py",
+      "source_id": "gliner-adapters/common.py",
+      "sha256": "8b1f77f8d4f1dc13f30d1f62df704f038169dd5721bcb75403ebe46fee87a32e",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/training.py",
+      "source_id": "gliner-adapters/training.py",
+      "sha256": "14b55076fd4ee29a520f86dc4e86dc6d69cfedb21bdd0f7ea6476eda5fbf137b",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/evaluate.py",
+      "source_id": "gliner-adapters/evaluate.py",
+      "sha256": "73fd7281527445d426966050cd4fce90add689fb83da4528cee3f45f36c3090f",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/quantization.py",
+      "source_id": "gliner-adapters/quantization.py",
+      "sha256": "cb30d9e76f793524be080a7cb909e863459f15f06d9b10b373a647ef239a7ae7",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/benchmark.py",
+      "source_id": "gliner-adapters/benchmark.py",
+      "sha256": "1e98c68d4005626753ce0a8cd53819bf4be90bdf5ab735240c0276167103d58f",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/gliner-adapters/metrics.py",
+      "source_id": "gliner-adapters/metrics.py",
+      "sha256": "271f7b27a16882f1a450f236cf117e2d22708c35e3964dd24c80811cefde0e34",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/llm-ner/data.py",
+      "source_id": "llm-ner/data.py",
+      "sha256": "70ea507c07a62ae08efed75015e410bff564fbe42a3d3515522abebf410b3274",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/llm-ner/models.py",
+      "source_id": "llm-ner/models.py",
+      "sha256": "a2e9abf0dac5ea479f275c0011e1d934bb0f69a709d1d3b7234b301e2d6cda6d",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/llm-ner/train.py",
+      "source_id": "llm-ner/train.py",
+      "sha256": "c69e958a7cc846a6192be4ce9f66106c4f575644abf4436cdd2bfdf8c91218ae",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/llm-ner/evaluate.py",
+      "source_id": "llm-ner/evaluate.py",
+      "sha256": "61522f9de775136620f123bbd2bf44c3746a603ee67c16e53bd746fa999e6428",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/long-documents/run_model.py",
+      "source_id": "long-documents/run_model.py",
+      "sha256": "58272359293f6e763e96e3b2f6eb35088d82af154f9c7f89c7d3f51c5390970e",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/long-documents/run_plan.py",
+      "source_id": "long-documents/run_plan.py",
+      "sha256": "efd7896a09fa88fdc56735edf7889e880823845b2041d028fbd540876694e30c",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/long-documents/summarize.py",
+      "source_id": "long-documents/summarize.py",
+      "sha256": "de37fd067121b5ac9a3b4052effbdf7a43b836c0b75c120ec4b07386bb72d2e5",
+      "byte_identical": true
+    },
+    {
+      "file": "experiments/recorded-source/prompt-baseline/prompt_baseline.py",
+      "source_id": "prompt-baseline/prompt_baseline.py",
+      "sha256": "11e36cb3ae65393dfd7fa412ca3c8b21a8beeec11defdf797b40038797e31fb0",
+      "byte_identical": true
+    }
+  ]
+}

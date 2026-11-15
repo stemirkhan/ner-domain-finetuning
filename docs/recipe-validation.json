@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "code_sha256": "02d681299d8d2481e12fdb7230168f8903f2157bedd834fa79a2a1e8701ce2f5",
+  "pure_contract_tests": 8,
+  "prepared_train_documents": 5000,
+  "actual_cpu_smoke": {
+    "mode": "lora",
+    "optimizer_steps": 1,
+    "trainable_parameters": 589824,
+    "sampled_parameters_changed": true,
+    "adapter_saved": true,
+    "reloaded_in_separate_process": true,
+    "prediction_structure_and_mask_verified": true,
+    "train_documents_processed": 1,
+    "test_calls": 0,
+    "final_code_reloaded_prediction_passed": true,
+    "configured_length_check_ran": true
+  },
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "gliner2": "2.1.0",
+    "transformers": "5.22.1",
+    "peft": "0.21.2"
+  },
+  "not_tested": [
+    "full_gpu_retraining_of_this_portable_script",
+    "full_dev_sweep_of_this_portable_script",
+    "latency_reproduction"
+  ],
+  "scope": "Technical validation only; not a quality benchmark.",
+  "raw_corpus_schema_checks": {
+    "train": 5000,
+    "dev": 500,
+    "test": 1000
+  }
+}

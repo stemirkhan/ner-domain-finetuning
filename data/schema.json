@@ -1,0 +1,19 @@
+{
+  "names": {
+    "PRIVATE_PRICE": "private commercial price",
+    "NEGOTIATION_LIMIT": "internal negotiation limit",
+    "INDIVIDUAL_DISCOUNT": "private immediate discount",
+    "RETRO_BONUS": "private retrospective rebate",
+    "PAYMENT_TERMS": "private payment schedule",
+    "INTERNAL_MARGIN": "internal deal profitability"
+  },
+  "descriptions": {
+    "private commercial price": "Nonpublic agreed purchase price or individual sale quote. Include the value and currency; exclude product unit. Exclude published prices.",
+    "internal negotiation limit": "Our undisclosed maximum purchase price, minimum sale price or allowed discount ceiling. Include the numeric value and its currency or percent.",
+    "private immediate discount": "Agreed nonpublic reduction of the current invoice. Include its amount or rate and the written application condition. Exclude public promotions and negotiating limits.",
+    "private retrospective rebate": "Nonpublic reward or refund after purchases or a reporting period. Include the complete formula: amount or rate, basis, threshold and period. Exclude public programs.",
+    "private payment schedule": "Individually agreed nonpublic payment schedule. Include all written installments, deadlines and trigger events. Exclude published standard payment terms.",
+    "internal deal profitability": "Internal margin or gross profit for a particular deal. Include its percentage or monetary value and written percentage base. Exclude published financial reports."
+  },
+  "base_revision": "cf5593a5d45e3bbf204b9df621b13b1c0cf25ee3"
+}

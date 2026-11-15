@@ -1,0 +1,1682 @@
+{
+  "train/frame/PRIVATE_PRICE/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "По персональной спецификации завода для нашей организации цена позиции {sku} зафиксирована: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В общедоступной спецификации завода для любого покупателя указана цена позиции {sku}: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Счет по индивидуальной договоренности принят нами; согласованная стоимость {sku} составляет {value}."
+  },
+  "train/frame/PRIVATE_PRICE/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Справочный счет с сайта не относится к нашей сделке; показанная в нем стоимость {sku} составляет {value}."
+  },
+  "train/frame/PRIVATE_PRICE/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В закрытую карточку расчета с поставщиком перенесли фактическую закупочную цену {sku}: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В карточку справочника перенесли опубликованную заводом закупочную цену для всех дилеров: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В личном предложении этому заказчику назначили {value} за единицу {sku}; условия остаются адресными."
+  },
+  "train/frame/PRIVATE_PRICE/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В предложении на открытой витрине назначили {value} за единицу {sku}; его может принять любой заказчик."
+  },
+  "train/frame/PRIVATE_PRICE/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Оператор записал результат индивидуального согласования: за {sku} нашей фирме выставят {value}."
+  },
+  "train/frame/PRIVATE_PRICE/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Оператор цитирует открытый каталог: за {sku} любому покупателю выставят {value}."
+  },
+  "train/frame/PRIVATE_PRICE/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для учета сделки нужна подтвержденная нам стоимость {sku} — {value}; общий прайс ее не содержит."
+  },
+  "train/frame/PRIVATE_PRICE/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для публичной презентации нужна справочная стоимость {sku} — {value}; она взята из общего прайса."
+  },
+  "train/frame/PRIVATE_PRICE/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Покупателю передали отдельное КП на {sku}. Сумма в нем: {value}. Остальным такие условия не объявляли."
+  },
+  "train/frame/PRIVATE_PRICE/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "На сайте разместили открытое КП на {sku}. Сумма в нем: {value}. Эти условия объявлены всем."
+  },
+  "train/frame/PRIVATE_PRICE/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Персональный счет завода по {sku} проверен финансовым отделом. Цена без разглашения третьим лицам: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Демонстрационный счет завода по {sku} опубликован в базе примеров. Цена из открытого образца: {value}."
+  },
+  "train/frame/PRIVATE_PRICE/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Переписка по адресной поставке завершена, и в непубличной спецификации на {sku} согласовано {value}."
+  },
+  "train/frame/PRIVATE_PRICE/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Содержимое этой записи — цитата опубликованной оферты на {sku}; указанное в ней значение {value} доступно всем."
+  },
+  "train/frame/PRIVATE_PRICE/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сохраняю сумму из индивидуального предложения контрагента по {sku}: {value}. Это действующее условие нашей сделки."
+  },
+  "train/frame/PRIVATE_PRICE/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сохраняю сумму из общедоступной рекламы контрагента по {sku}: {value}. Индивидуальной сделки по ней у нас нет."
+  },
+  "dev/frame/PRIVATE_PRICE/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Закупщик сверил персональный расчет партии {sku}; подтвержденная поставщиком цена для нас равна {value}."
+  },
+  "dev/frame/PRIVATE_PRICE/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Закупщик сверил доступную без регистрации страницу {sku}; указанная там общая цена равна {value}."
+  },
+  "dev/frame/PRIVATE_PRICE/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Из принятого индивидуального КП в финансовую сводку попало {value} за {sku}. Договоренность относится к нашему заказчику."
+  },
+  "dev/frame/PRIVATE_PRICE/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Из открытой страницы с типовыми предложениями в справку попало {value} за {sku}. Это доступная всем информация."
+  },
+  "dev/frame/PRIVATE_PRICE/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Завод и наша фирма отдельно утвердили стоимость позиции {sku}. В адресном документе стоит {value}."
+  },
+  "dev/frame/PRIVATE_PRICE/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Завод открыл всем стоимость позиции {sku}. В опубликованном документе стоит {value}."
+  },
+  "dev/frame/PRIVATE_PRICE/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В истории счета отражено {value} за {sku}; это реальная согласованная стоимость нашей непубличной поставки."
+  },
+  "dev/frame/PRIVATE_PRICE/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В учебной справке самого завода отражено {value} за {sku}; справка размещена на сайте и не описывает нашу поставку."
+  },
+  "test/frame/PRIVATE_PRICE/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Ведомость взаиморасчетов с заводом содержит персональную сумму по {sku}: {value}. Ее приняли для исполнения нашего заказа."
+  },
+  "test/frame/PRIVATE_PRICE/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Ведомость открытых предложений завода содержит сумму по {sku}: {value}. Она опубликована и не относится к взаиморасчетам с нами."
+  },
+  "test/frame/PRIVATE_PRICE/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Продавец прислал нам адресный документ на {sku}; в качестве окончательной цены стороны закрепили {value}."
+  },
+  "test/frame/PRIVATE_PRICE/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Продавец разместил общую оферту на {sku}; в качестве объявленной всем цены в ней приведено {value}."
+  },
+  "test/frame/PRIVATE_PRICE/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Сумма {value} относится к заключенной нами отдельной сделке по {sku} и взята из персонального счета, а не с сайта."
+  },
+  "test/frame/PRIVATE_PRICE/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Сумма {value} относится к публичному объявлению по {sku} и взята с сайта, а не из персонального счета."
+  },
+  "test/frame/PRIVATE_PRICE/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для этого покупателя утвердили собственное предложение на {sku}. Принятая им цена записана как {value}."
+  },
+  "test/frame/PRIVATE_PRICE/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для любого покупателя действует размещенное на сайте предложение на {sku}. Общая цена записана как {value}."
+  },
+  "test/frame/PRIVATE_PRICE/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Архив переговоров хранит прежнюю согласованную цену нашей персональной поставки {sku}: {value}. Публичной она не становилась."
+  },
+  "test/frame/PRIVATE_PRICE/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Архив сайта хранит прежнюю опубликованную цену поставки {sku}: {value}. Это открытая историческая информация."
+  },
+  "test/frame/PRIVATE_PRICE/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Коммерческий отдел получил персональное подтверждение стоимости {sku}: {value}; документ адресован только нашей компании."
+  },
+  "test/frame/PRIVATE_PRICE/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Коммерческий отдел получил ссылку на публичное подтверждение стоимости {sku}: {value}; документ доступен любой компании."
+  },
+  "train/frame/NEGOTIATION_LIMIT/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Руководитель оставил менеджеру неозвученный клиенту нижний предел по {sku}: {value}. Это граница полномочий на торг."
+  },
+  "train/frame/NEGOTIATION_LIMIT/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В открытой программе продаж указан нижний предел по {sku}: {value}. Эту опубликованную границу видит любой клиент."
+  },
+  "train/frame/NEGOTIATION_LIMIT/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Наш внутренний максимум закупки позиции {sku} — {value}; завод этой суммы еще не знает."
+  },
+  "train/frame/NEGOTIATION_LIMIT/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Максимальная цена позиции {sku} в опубликованном закупочном объявлении — {value}; условия доступны всем участникам."
+  },
+  "train/frame/NEGOTIATION_LIMIT/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для этой сделки продавец может уступить только до внутренней планки {value}. Покупателю ее пока не раскрываем."
+  },
+  "train/frame/NEGOTIATION_LIMIT/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В условиях общедоступной акции продавец объявил планку {value}. Покупатель видит ее на странице акции."
+  },
+  "train/frame/NEGOTIATION_LIMIT/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Разрешение начальника для переговоров по {sku} ограничено значением {value}; это наш резерв, а не отправленное предложение."
+  },
+  "train/frame/NEGOTIATION_LIMIT/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Опубликованная инструкция для покупателей по {sku} содержит значение {value}; это открытое ограничение программы."
+  },
+  "train/frame/NEGOTIATION_LIMIT/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В заметке для своих зафиксировали {value} как крайнее значение уступки по {sku}. Контрагенту эта граница не сообщалась."
+  },
+  "train/frame/NEGOTIATION_LIMIT/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В справке для всех зафиксировали {value} как крайнее значение уступки по {sku}. Это опубликованное условие."
+  },
+  "train/frame/NEGOTIATION_LIMIT/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Если переговоры зайдут в тупик, согласованный внутри отдела предел по {sku} составляет {value}. Внешнему участнику его не передавали."
+  },
+  "train/frame/NEGOTIATION_LIMIT/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В общедоступных правилах торгов предел по {sku} составляет {value}. Он объявлен всем внешним участникам."
+  },
+  "train/frame/NEGOTIATION_LIMIT/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Рабочий резерв на последнюю уступку — {value}. Финансовый отдел разрешил его использовать, но партнер об этом не уведомлен."
+  },
+  "train/frame/NEGOTIATION_LIMIT/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Объявленное организатором ограничение последней уступки — {value}. Оно опубликовано для всех партнеров."
+  },
+  "train/frame/NEGOTIATION_LIMIT/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Менеджеру передали внутреннее решение: при торге по {sku} не выходить за значение {value}. Это не публичная оферта."
+  },
+  "train/frame/NEGOTIATION_LIMIT/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Менеджер цитирует общую оферту: при торге по {sku} действует значение {value}. Текст оферты открыт на сайте."
+  },
+  "train/frame/NEGOTIATION_LIMIT/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Непубличная граница наших переговорных полномочий по {sku} равна {value}. Согласованной цены сделки пока нет."
+  },
+  "train/frame/NEGOTIATION_LIMIT/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Граница общедоступного тарифа по {sku} равна {value}. Индивидуальных переговоров эта запись не касается."
+  },
+  "train/frame/NEGOTIATION_LIMIT/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Внутри команды одобрили предельную уступку {value}; клиенту сначала предложим обычные условия."
+  },
+  "train/frame/NEGOTIATION_LIMIT/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для всей аудитории акции объявлена предельная уступка {value}; условия размещены в открытом доступе."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "До разговора с партнером финансовый директор разрешил нам торг по {sku} в пределах {value}. Само разрешение осталось внутри компании."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В свободно доступном регламенте для партнеров разрешен торг по {sku} в пределах {value}. Это цитата общего правила."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "На согласовании сделки утвердили нашу окончательную переговорную границу {value}; адресат будущего КП ее не видел."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "На сайте опубликована окончательная граница акции {value}; адресат будущего КП может увидеть ее сам."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Запас уступки для нашего менеджера по {sku}: {value}. Достигнутой договоренности еще нет, граница контрагенту не объявлялась."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Публично объявленный запас уступки по {sku}: {value}. Это открытая программа, а не секретные полномочия менеджера."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Совещание завершили внутренним указанием остановить торг на {value}. Во внешнем письме эта планка не фигурировала."
+  },
+  "dev/frame/NEGOTIATION_LIMIT/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Организатор разместил для всех указание остановить торг на {value}. Внешнее объявление доступно без ограничений."
+  },
+  "test/frame/NEGOTIATION_LIMIT/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для сотрудника согласована последняя допустимая позиция в переговорах: {value}. Она известна нашей стороне и пока скрыта от контрагента."
+  },
+  "test/frame/NEGOTIATION_LIMIT/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для участников опубликована последняя допустимая позиция в торгах: {value}. Это значение приведено в открытом объявлении."
+  },
+  "test/frame/NEGOTIATION_LIMIT/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "По {sku} наш директор разрешает дойти до {value}, если другие аргументы не помогут. Передавать партнеру разрешенную границу не собирались."
+  },
+  "test/frame/NEGOTIATION_LIMIT/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "По {sku} открытое предложение разрешает дойти до {value}. Любой партнер может прочитать это опубликованное правило."
+  },
+  "test/frame/NEGOTIATION_LIMIT/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В протоколе нашей переговорной команды сохранилось крайнее значение {value}. Оно ограничивает полномочия, но сторонней компании не сообщено."
+  },
+  "test/frame/NEGOTIATION_LIMIT/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В опубликованном протоколе общих торгов сохранилось крайнее значение {value}. Его могут прочитать все участвующие компании."
+  },
+  "test/frame/NEGOTIATION_LIMIT/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Планку {value} согласовали внутри компании специально для возможного торга по {sku}; это не уже принятая партнером цена."
+  },
+  "test/frame/NEGOTIATION_LIMIT/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Планку {value} объявили на странице общей программы по {sku}; это публичное условие, а не наш внутренний резерв."
+  },
+  "test/frame/NEGOTIATION_LIMIT/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Закрытая памятка менеджеру устанавливает максимальную скидку {value} по {sku}. Контрагент не видел памятку и не знает разрешенного нам предела."
+  },
+  "test/frame/NEGOTIATION_LIMIT/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Открытая памятка участнику устанавливает максимальную скидку {value} по {sku}. Памятка размещена для всех желающих."
+  },
+  "test/frame/NEGOTIATION_LIMIT/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Допустимый процент уступки для финального раунда обсуждения {sku} равен {value}; запись предназначена только участникам внутреннего согласования."
+  },
+  "test/frame/NEGOTIATION_LIMIT/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Допустимый процент уступки по общей акции {sku} равен {value}; запись опубликована и не относится к внутреннему согласованию."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для текущего счета этого клиента утвердили индивидуальное снижение: {value}. Оно применяется сразу и не опубликовано для остальных."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В общедоступной акции опубликовано снижение: {value}. Оно применяется сразу и доступно всем покупателям."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "По закрытому приложению к продаже {sku} клиенту согласовано {value}. Это скидка на текущий счет, не будущий возврат."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "На открытой странице продаж {sku} объявлено {value}. Это скидка на текущий счет для любого покупателя."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Итог личного согласования с заказчиком: уменьшение цены {sku} на условиях {value}. Уступка касается только его заказа."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Итог опубликованной программы: уменьшение цены {sku} на условиях {value}. Программа доступна всем заказчикам."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Менеджер внес в непубличное КП согласованную скидку {value}. Сумму текущего счета уменьшаем при ее применении."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Менеджер цитирует публичную страницу со скидкой {value}. Это доступное всем правило изменения текущего счета."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "На эту конкретную покупку одобрили адресную скидку {value}. Условие уже согласовано и не является пределом будущего торга."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "На любые покупки по опубликованной акции действует скидка {value}. Это общее правило, а не адресное соглашение."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В индивидуальной договоренности записали {value} как снижение текущей стоимости {sku}. Остальным клиентам это не объявляли."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В опубликованных условиях программы записали {value} как снижение текущей стоимости {sku}. Условия объявлены всем клиентам."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сотрудник получил разрешение применить к этому счету уже согласованную скидку {value}. Персональное решение остается непубличным."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сотрудник получил ссылку на общедоступную скидку {value}. Общее правило опубликовано для всех счетов подходящей категории."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Контрагенту письменно подтвердили индивидуальную уступку {value} на текущую поставку. Публикации условия не было."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Всем контрагентам публично объявили уступку {value} на текущие поставки. Это текст открытой программы."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Закрытая спецификация по {sku} содержит принятую скидку {value}; ее отражаем сразу в этом счете."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Опубликованная спецификация акции по {sku} содержит скидку {value}; ее может получить любой покупатель."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В результате личных переговоров цену текущего заказа снизили по правилу {value}. Это индивидуальное соглашение."
+  },
+  "train/frame/INDIVIDUAL_DISCOUNT/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Открытый калькулятор акции снижает цену текущего заказа по правилу {value}. Калькулятор доступен всем."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В адресном коммерческом письме согласовано уменьшение текущего платежа за {sku}: {value}. Оно касается нашего конкретного заказчика."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В публичном коммерческом объявлении указано уменьшение текущего платежа за {sku}: {value}. Оно доступно каждому заказчику."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "К счету согласованного клиента применяем индивидуальное правило скидки {value}. Решение уже принято и не опубликовано."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "К любому подходящему счету применяется опубликованное правило скидки {value}. Решение не требует персональных переговоров."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Финансист подтвердил личную скидку по сделке: {value}. Уменьшаем текущий счет, выплаты за прошлые периоды нет."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "На сайте финансист привел доступный всем пример акции: {value}. Пример описывает снижение счета, не условия нашей сделки."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Для этого покупателя записали в отдельное приложение скидку {value}. Другим это условие не обещали."
+  },
+  "dev/frame/INDIVIDUAL_DISCOUNT/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Для всех покупателей разместили на сайте скидку {value}. Это общедоступное предложение."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Персональное письмо заказчику подтверждает снижение суммы его действующего счета: {value}. Соглашение не вынесено в открытый прайс."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Общая страница программы подтверждает снижение суммы подходящего счета: {value}. Это условие открытого прайса."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "По этой продаже текущая стоимость уменьшена на основании принятого адресного условия {value}. Оно известно только сторонам сделки."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "По опубликованной акции текущая стоимость уменьшается на основании условия {value}. Его текст доступен любому посетителю."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В переписке с конкретным покупателем мы окончательно приняли скидку {value}; возвращать ее после квартала не потребуется."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В новостях компании для всех покупателей объявили скидку {value}; это общедоступная акция текущего периода."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Адресный расчет по {sku} включает согласованную уступку {value}. Расчет отправили только участникам данной продажи."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Общедоступный расчет акции по {sku} включает уступку {value}. Расчет опубликован как пример для любых продаж."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Стороны этой сделки отдельно согласовали применять к счету скидку {value}. Общие условия сайта не менялись."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Обновленные условия сайта объявляют для всех применять к счету скидку {value}. Отдельного согласования с нашей фирмой здесь нет."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "При закрытии личных переговоров клиенту подтвердили снижение текущей цены по правилу {value}. Запись имеет адресный характер."
+  },
+  "test/frame/INDIVIDUAL_DISCOUNT/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В общедоступной новости подтвердили снижение текущей цены по правилу {value}. Запись относится к общей акции."
+  },
+  "train/frame/RETRO_BONUS/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Закрытое дилерское приложение предусматривает последующее вознаграждение: {value}. Начисление производится по итогам периода."
+  },
+  "train/frame/RETRO_BONUS/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Открытая дилерская программа предусматривает последующее вознаграждение: {value}. Эта формула опубликована для всех."
+  },
+  "train/frame/RETRO_BONUS/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "По личной договоренности завод вернет нашей фирме {value}. Текущие счета не уменьшаются, возврат учитывается отдельно."
+  },
+  "train/frame/RETRO_BONUS/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "По опубликованной программе завод возвращает дилерам {value}. Это доступная всем формула, не личное соглашение с нами."
+  },
+  "train/frame/RETRO_BONUS/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В непубличном протоколе с поставщиком согласован ретробонус {value}. Он выплачивается после подведения итогов."
+  },
+  "train/frame/RETRO_BONUS/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В опубликованном положении поставщика указан ретробонус {value}. Положение доступно любому дилеру."
+  },
+  "train/frame/RETRO_BONUS/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Наше индивидуальное вознаграждение по завершении отчетного периода записано так: {value}. Условие остается между сторонами."
+  },
+  "train/frame/RETRO_BONUS/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Общая формула вознаграждения на странице программы записана так: {value}. Условие находится в открытом доступе."
+  },
+  "train/frame/RETRO_BONUS/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Финансист внес закрытое условие обратной выплаты от завода: {value}. Это не скидка в текущем счете."
+  },
+  "train/frame/RETRO_BONUS/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Финансист переслал открытое условие обратной выплаты от завода: {value}. Источник — опубликованная программа."
+  },
+  "train/frame/RETRO_BONUS/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Только для нашей организации подтвержден возврат по итогам закупок: {value}. Соглашение не публиковалось."
+  },
+  "train/frame/RETRO_BONUS/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для любой организации, выполняющей открытую программу, объявлен возврат: {value}. Соглашение опубликовано на сайте."
+  },
+  "train/frame/RETRO_BONUS/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "После сверки периода поставщик должен начислить нам индивидуальный бонус на условиях {value}. Это непубличное приложение."
+  },
+  "train/frame/RETRO_BONUS/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В общедоступной памятке описан бонус поставщика на условиях {value}. Памятка не раскрывает наши индивидуальные договоренности."
+  },
+  "train/frame/RETRO_BONUS/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Личное письмо завода подтверждает формулу последующего вознаграждения {value}. Действующие счета оплачиваем без этой скидки."
+  },
+  "train/frame/RETRO_BONUS/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Общая рассылка завода со ссылкой на сайт подтверждает формулу вознаграждения {value}. Она доступна всем получателям."
+  },
+  "train/frame/RETRO_BONUS/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В расчете нашей сделки есть закрытая формула последующего возврата {value}. Она применяется после накопления закупок."
+  },
+  "train/frame/RETRO_BONUS/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В справочнике открытой программы есть формула возврата {value}. Правило опубликовано и доступно всем участникам."
+  },
+  "train/frame/RETRO_BONUS/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Отдельно согласовали с заводом выплату по результатам сотрудничества: {value}. Это персональные условия нашей фирмы."
+  },
+  "train/frame/RETRO_BONUS/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Завод публично описал выплату по результатам программы: {value}. Это общие условия, размещенные на сайте."
+  },
+  "dev/frame/RETRO_BONUS/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По персональному соглашению после периода мы получим от поставщика вознаграждение {value}. Оно не уменьшает сегодняшний счет."
+  },
+  "dev/frame/RETRO_BONUS/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По открытому положению участники получают от поставщика вознаграждение {value}. Положение можно свободно переслать."
+  },
+  "dev/frame/RETRO_BONUS/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В адресном расчете возврата для нашей компании указано {value}. Условие согласовано отдельно от публичного прайса."
+  },
+  "dev/frame/RETRO_BONUS/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В общедоступном примере расчета возврата указано {value}. Пример размещен рядом с публичным прайсом."
+  },
+  "dev/frame/RETRO_BONUS/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Дилерский менеджер подтвердил непубличный бонус по итогам оборота: {value}. Запись предназначена для финансового отдела."
+  },
+  "dev/frame/RETRO_BONUS/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Дилерский менеджер прислал ссылку на общую бонусную программу: {value}. Ее условия размещены открыто."
+  },
+  "dev/frame/RETRO_BONUS/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По закрытой договоренности мы учитываем будущий возврат от завода по формуле {value}."
+  },
+  "dev/frame/RETRO_BONUS/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По опубликованной договоренности для всех участников действует возврат от завода по формуле {value}."
+  },
+  "test/frame/RETRO_BONUS/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Индивидуальный документ о взаиморасчетах содержит последующую выплату в нашу пользу: {value}. Ее начислят по результатам закупок."
+  },
+  "test/frame/RETRO_BONUS/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Общедоступный документ программы содержит последующую выплату участникам: {value}. Это опубликованные условия."
+  },
+  "test/frame/RETRO_BONUS/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для нашей фирмы завод отдельно утвердил вознаграждение по накопленному объему: {value}. Остальным такая договоренность не объявлена."
+  },
+  "test/frame/RETRO_BONUS/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для всех дилеров завод открыто объявил вознаграждение по накопленному объему: {value}. Текст размещен на сайте."
+  },
+  "test/frame/RETRO_BONUS/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В личной переписке подтвердили нам формулу ретробонуса {value}; сумма относится к последующему расчету, не к текущему снижению цены."
+  },
+  "test/frame/RETRO_BONUS/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В открытой публикации приведена формула ретробонуса {value}; ее разрешено цитировать любому читателю."
+  },
+  "test/frame/RETRO_BONUS/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "После завершения периода у нас возникает индивидуально согласованное право на возврат: {value}. Приложение с формулой непубличное."
+  },
+  "test/frame/RETRO_BONUS/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Общая программа после завершения периода дает участнику право на возврат: {value}. Приложение с формулой опубликовано."
+  },
+  "test/frame/RETRO_BONUS/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В закрытой договорной заметке отражено вознаграждение от поставщика {value}. Оно подлежит начислению отдельно от оплаченных счетов."
+  },
+  "test/frame/RETRO_BONUS/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В открытой договорной памятке отражено вознаграждение от поставщика {value}. Памятка описывает общие доступные условия."
+  },
+  "test/frame/RETRO_BONUS/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Переговоры с заводом закончились принятием нашего особого бонусного условия {value}. Публичной версии этой договоренности нет."
+  },
+  "test/frame/RETRO_BONUS/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "На странице завода размещено общее бонусное условие {value}. Индивидуальные переговоры для знакомства с ним не требуются."
+  },
+  "train/frame/PAYMENT_TERMS/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для этой поставки в индивидуальной спецификации закрепили порядок оплаты: {value}. Общий сайт этих условий не содержит."
+  },
+  "train/frame/PAYMENT_TERMS/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В опубликованных стандартных условиях указан порядок оплаты: {value}. Он доступен каждому покупателю."
+  },
+  "train/frame/PAYMENT_TERMS/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Финансист разрешил для нашего договора особый график: {value}. Это персональное согласование сторон."
+  },
+  "train/frame/PAYMENT_TERMS/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В общедоступной памятке финансист привел стандартный график: {value}. Это пример для всех договоров."
+  },
+  "train/frame/PAYMENT_TERMS/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В закрытом приложении записали {value} как согласованную схему расчетов по данной сделке."
+  },
+  "train/frame/PAYMENT_TERMS/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В открытом приложении программы записали {value} как стандартную схему расчетов для всех участников."
+  },
+  "train/frame/PAYMENT_TERMS/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Контрагенту в личном письме подтвердили оплату по правилу {value}. Исключение действует только для его заказа."
+  },
+  "train/frame/PAYMENT_TERMS/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Контрагентам на сайте подтвердили оплату по правилу {value}. Условие действует для любого подходящего заказа."
+  },
+  "train/frame/PAYMENT_TERMS/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Согласование финансового отдела по этому клиенту: {value}. Это непубличная договоренность о платежах."
+  },
+  "train/frame/PAYMENT_TERMS/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Справка финансового отдела на сайте: {value}. Это опубликованное условие о платежах."
+  },
+  "train/frame/PAYMENT_TERMS/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В карточку адресного договора внесли согласованный график {value}. Доступ к приложению имеют только стороны сделки."
+  },
+  "train/frame/PAYMENT_TERMS/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В карточку открытой оферты внесли график {value}. Доступ к тексту имеет любой посетитель сайта."
+  },
+  "train/frame/PAYMENT_TERMS/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для данной покупки стороны отдельно утвердили {value}. Условие определяет фактические платежи и не публиковалось."
+  },
+  "train/frame/PAYMENT_TERMS/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для всех покупок по открытой программе предусмотрено {value}. Условие опубликовано без ограничений."
+  },
+  "train/frame/PAYMENT_TERMS/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Казначей подтвердил индивидуальный порядок перечислений: {value}. В общий справочник условий его не включали."
+  },
+  "train/frame/PAYMENT_TERMS/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Казначей указал на открытый справочник перечислений: {value}. Это общее правило, не исключение для нашей сделки."
+  },
+  "train/frame/PAYMENT_TERMS/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В непубличном протоколе расчетов по {sku} установлен график {value}."
+  },
+  "train/frame/PAYMENT_TERMS/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В публичном примере расчетов по {sku} приведен график {value}."
+  },
+  "train/frame/PAYMENT_TERMS/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сотрудник зафиксировал особое соглашение с этим заказчиком об оплате: {value}."
+  },
+  "train/frame/PAYMENT_TERMS/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сотрудник процитировал общедоступное соглашение программы об оплате: {value}."
+  },
+  "dev/frame/PAYMENT_TERMS/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По адресному приложению расчеты за партию проходят так: {value}. Порядок согласован для этой сделки отдельно."
+  },
+  "dev/frame/PAYMENT_TERMS/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "По опубликованной инструкции расчеты за партию проходят так: {value}. Это общий порядок для всех клиентов."
+  },
+  "dev/frame/PAYMENT_TERMS/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "У этого контрагента утвержден индивидуальный платежный график {value}. Документ остается у сторон договора."
+  },
+  "dev/frame/PAYMENT_TERMS/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В примере на публичном портале приведен платежный график {value}. Документ доступен без регистрации."
+  },
+  "dev/frame/PAYMENT_TERMS/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Финансовый директор подтвердил нам непубличное исключение по оплате: {value}."
+  },
+  "dev/frame/PAYMENT_TERMS/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Финансовый директор опубликовал на сайте общие условия оплаты: {value}."
+  },
+  "dev/frame/PAYMENT_TERMS/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Из закрытого соглашения по поставке следует порядок {value}. Это действующая договоренность, не возможная скидка."
+  },
+  "dev/frame/PAYMENT_TERMS/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Из открытой страницы поставщика следует порядок {value}. Это опубликованное правило, не закрытое соглашение."
+  },
+  "test/frame/PAYMENT_TERMS/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Взаимно подписанное адресное приложение описывает последовательность расчетов: {value}. Для других покупателей правило не объявляли."
+  },
+  "test/frame/PAYMENT_TERMS/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В опубликованной оферте описана последовательность расчетов: {value}. Правило объявлено всем покупателям."
+  },
+  "test/frame/PAYMENT_TERMS/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "По данному договору получено личное подтверждение платежного условия {value}. Информация содержится в переписке сторон."
+  },
+  "test/frame/PAYMENT_TERMS/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "На общедоступной странице получено подтверждение платежного условия {value}. Информация открыта для любого читателя."
+  },
+  "test/frame/PAYMENT_TERMS/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для нашей конкретной поставки согласовали исключительный порядок {value}; общего опубликованного правила с ним нет."
+  },
+  "test/frame/PAYMENT_TERMS/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для типовой поставки на сайте указан порядок {value}; это общее опубликованное правило."
+  },
+  "test/frame/PAYMENT_TERMS/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Клиенту письменно подтвердили индивидуальную схему {value}. Она уже принята сторонами и остается непубличной."
+  },
+  "test/frame/PAYMENT_TERMS/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "На сайте письменно опубликована стандартная схема {value}. Она открыта и может быть использована любым клиентом."
+  },
+  "test/frame/PAYMENT_TERMS/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "При заключении этой сделки финансовые службы согласовали {value}. Договорное приложение адресовано только сторонам."
+  },
+  "test/frame/PAYMENT_TERMS/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В открытом образце сделки финансовая служба показывает {value}. Образец адресован всем посетителям сайта."
+  },
+  "test/frame/PAYMENT_TERMS/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Закрытая запись по взаиморасчетам устанавливает {value}. Это обязанность по оплате данной поставки."
+  },
+  "test/frame/PAYMENT_TERMS/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Публичная запись в справочнике устанавливает {value}. Это общее описание порядка оплаты поставок."
+  },
+  "train/frame/INTERNAL_MARGIN/0/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Во внутреннем расчете этой сделки плановая маржа составляет {value}. Финансовый отдел не публиковал показатель."
+  },
+  "train/frame/INTERNAL_MARGIN/0/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В годовом отчете на сайте опубликована валовая маржа {value}. Показатель доступен любому читателю."
+  },
+  "train/frame/INTERNAL_MARGIN/1/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Финансист оценил нашу прибыль по конкретной поставке: {value}. Это закрытая расчетная строка."
+  },
+  "train/frame/INTERNAL_MARGIN/1/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Финансист опубликовал в открытом примере показатель прибыли: {value}. Это справочная строка, не расчет нашей поставки."
+  },
+  "train/frame/INTERNAL_MARGIN/2/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В рабочей таблице менеджера по этой сделке зафиксирована маржа {value}; клиенту расчет не передавали."
+  },
+  "train/frame/INTERNAL_MARGIN/2/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В опубликованной таблице отчета зафиксирована маржа {value}; отчет находится в свободном доступе."
+  },
+  "train/frame/INTERNAL_MARGIN/3/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "После проверки затрат внутренний показатель валовой прибыли по заказу равен {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/3/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В открытой учебной заметке по финансовому расчету показатель валовой прибыли равен {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/4/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Команда продаж обсуждает непубличную маржу текущей сделки {value}. Это наш расчет, не скидка покупателю."
+  },
+  "train/frame/INTERNAL_MARGIN/4/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Команда продаж ссылается на опубликованную маржу компании {value}. Это открытая отчетность, не данные сделки."
+  },
+  "train/frame/INTERNAL_MARGIN/5/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В закрытом согласовании цены финансовый отдел оставил показатель прибыли {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/5/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В открытом разъяснении к отчету финансовый отдел привел показатель прибыли {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/6/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для внутренней оценки заказа записали маржинальность {value}. Контрагенту эту величину не сообщали."
+  },
+  "train/frame/INTERNAL_MARGIN/6/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Для публичной презентации записали маржинальность {value} из размещенного на сайте отчета."
+  },
+  "train/frame/INTERNAL_MARGIN/7/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Непубличная аналитическая карточка данной продажи содержит валовую прибыль {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/7/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Публичная аналитическая карточка годовых результатов содержит валовую прибыль {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/8/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Внутри подразделения утвердили прогноз маржи по этой поставке {value}; это не аванс и не рекламная скидка."
+  },
+  "train/frame/INTERNAL_MARGIN/8/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "В опубликованном обзоре компании приведен показатель маржи {value}; источник открыт."
+  },
+  "train/frame/INTERNAL_MARGIN/9/private": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сумма или доля прибыли в нашем закрытом расчете сделки указана как {value}."
+  },
+  "train/frame/INTERNAL_MARGIN/9/public": {
+    "split": "train",
+    "kind": "role_clause",
+    "text": "Сумма или доля прибыли в открытом демонстрационном расчете указана как {value}."
+  },
+  "dev/frame/INTERNAL_MARGIN/0/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Рабочая финансовая оценка конкретного заказа дает маржу {value}. Документ предназначен только для внутреннего согласования."
+  },
+  "dev/frame/INTERNAL_MARGIN/0/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Опубликованная финансовая справка дает маржу {value}. Документ доступен всем посетителям сайта."
+  },
+  "dev/frame/INTERNAL_MARGIN/1/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В закрытой сводке прибыльности этой продажи финансовый результат отражен значением {value}."
+  },
+  "dev/frame/INTERNAL_MARGIN/1/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "В открытой сводке опубликованной отчетности финансовый результат отражен значением {value}."
+  },
+  "dev/frame/INTERNAL_MARGIN/2/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Финансист подтвердил внутреннюю маржинальность нашей сделки: {value}. Цифра не является частью предложения клиенту."
+  },
+  "dev/frame/INTERNAL_MARGIN/2/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Финансист процитировал публичную маржинальность из годового отчета: {value}. Источник опубликован."
+  },
+  "dev/frame/INTERNAL_MARGIN/3/private": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Оценка прибыли по адресному заказу в нашей внутренней записке равна {value}."
+  },
+  "dev/frame/INTERNAL_MARGIN/3/public": {
+    "split": "dev",
+    "kind": "role_clause",
+    "text": "Пример оценки прибыли в общедоступном учебном материале равен {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/0/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Финансовая служба закрыла внутренний расчет этой поставки. Полученная маржа в нем: {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/0/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Финансовая служба разместила открытый годовой отчет. Опубликованная маржа в нем: {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/1/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В личном обсуждении внутри отдела фигурирует валовая прибыль {value} по конкретной сделке."
+  },
+  "test/frame/INTERNAL_MARGIN/1/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "В общедоступном обсуждении опубликованного отчета фигурирует валовая прибыль {value} по годовому итогу."
+  },
+  "test/frame/INTERNAL_MARGIN/2/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для непубличного согласования этой продажи рассчитали показатель прибыльности {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/2/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Для публичного финансового примера рассчитали показатель прибыльности {value}; материал размещен открыто."
+  },
+  "test/frame/INTERNAL_MARGIN/3/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Прогноз по сделке содержит маржу {value}. Сам прогноз относится к нашим внутренним расчетам и не публиковался."
+  },
+  "test/frame/INTERNAL_MARGIN/3/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Прогноз компании в опубликованной презентации содержит маржу {value}. Это открытое раскрытие информации."
+  },
+  "test/frame/INTERNAL_MARGIN/4/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Закрытая управленческая запись по этому заказу указывает значение прибыли {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/4/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Открытая справочная запись из опубликованного отчета указывает значение прибыли {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/5/private": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Внутренняя оценка экономики нашей поставки завершена; маржинальный показатель составляет {value}."
+  },
+  "test/frame/INTERNAL_MARGIN/5/public": {
+    "split": "test",
+    "kind": "role_clause",
+    "text": "Общедоступный пример оценки экономики поставки завершен; опубликованный маржинальный показатель составляет {value}."
+  },
+  "train/formula/INDIVIDUAL_DISCOUNT/0": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}%"
+  },
+  "train/formula/INDIVIDUAL_DISCOUNT/1": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% при оплате счета в течение {days} рабочих дней"
+  },
+  "train/formula/INDIVIDUAL_DISCOUNT/2": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{money}"
+  },
+  "train/formula/INDIVIDUAL_DISCOUNT/3": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% от цены комплекта при заказе не менее {qty} единиц"
+  },
+  "train/formula/INDIVIDUAL_DISCOUNT/4": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% с суммы счета без стоимости доставки"
+  },
+  "dev/formula/INDIVIDUAL_DISCOUNT/0": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{rate}% с цены этой поставки"
+  },
+  "dev/formula/INDIVIDUAL_DISCOUNT/1": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{money} при приобретении партии от {qty} единиц"
+  },
+  "dev/formula/INDIVIDUAL_DISCOUNT/2": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{rate}% при перечислении оплаты в срок {days} рабочих дней"
+  },
+  "test/formula/INDIVIDUAL_DISCOUNT/0": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{rate}% от согласованной суммы заказа"
+  },
+  "test/formula/INDIVIDUAL_DISCOUNT/1": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{money} за единовременную покупку {qty} единиц"
+  },
+  "test/formula/INDIVIDUAL_DISCOUNT/2": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{rate}% с стоимости оборудования при оплате за {days} рабочих дней"
+  },
+  "test/formula/INDIVIDUAL_DISCOUNT/3": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{rate}% от стоимости текущего счета без транспортных услуг"
+  },
+  "train/formula/RETRO_BONUS/0": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% от оплаченных закупок при обороте от {turnover} за квартал"
+  },
+  "train/formula/RETRO_BONUS/1": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{money} за выполнение квартального плана в {qty} единиц"
+  },
+  "train/formula/RETRO_BONUS/2": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% от закупочного оборота без стоимости перевозки при достижении {turnover}"
+  },
+  "train/formula/RETRO_BONUS/3": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{rate}% от поступившей оплаты при закупке не менее {qty} единиц за полугодие"
+  },
+  "train/formula/RETRO_BONUS/4": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{money} по итогам года при объеме закупок от {turnover}"
+  },
+  "dev/formula/RETRO_BONUS/0": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{rate}% с суммы закрытых счетов за квартал, если закуплено от {qty} единиц"
+  },
+  "dev/formula/RETRO_BONUS/1": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{money} после завершения полугодия при обороте не менее {turnover}"
+  },
+  "dev/formula/RETRO_BONUS/2": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{rate}% от оплаченного оборудования за год при достижении объема {qty} единиц"
+  },
+  "test/formula/RETRO_BONUS/0": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{rate}% от стоимости завершенных поставок при годовом объеме от {turnover}"
+  },
+  "test/formula/RETRO_BONUS/1": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{money} после квартальной сверки при закупке от {qty} единиц"
+  },
+  "test/formula/RETRO_BONUS/2": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{rate}% с оплаченной суммы за полугодие, если оборот достигнет {turnover}"
+  },
+  "test/formula/RETRO_BONUS/3": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{money} за результат года при поставке не менее {qty} единиц"
+  },
+  "train/formula/PAYMENT_TERMS/0": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{advance}% авансом, оставшиеся {rest}% через {days} дней после приемки"
+  },
+  "train/formula/PAYMENT_TERMS/1": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "100% суммы через {days} календарных дней после подписания акта"
+  },
+  "train/formula/PAYMENT_TERMS/2": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{advance}% при подтверждении заказа, {rest}% после приемки оборудования"
+  },
+  "train/formula/PAYMENT_TERMS/3": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "50% после отгрузки и 50% через {days} календарных дней после первого платежа"
+  },
+  "train/formula/PAYMENT_TERMS/4": {
+    "split": "train",
+    "kind": "formula_surface",
+    "text": "{advance}% перед поставкой, остаток в течение {days} рабочих дней после приемки"
+  },
+  "dev/formula/PAYMENT_TERMS/0": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "{advance}% предоплаты, затем {rest}% не позднее {days} календарных дней с приемки"
+  },
+  "dev/formula/PAYMENT_TERMS/1": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "100% суммы в срок {days} рабочих дней с даты подписания приемочного акта"
+  },
+  "dev/formula/PAYMENT_TERMS/2": {
+    "split": "dev",
+    "kind": "formula_surface",
+    "text": "50% после передачи оборудования, еще 50% спустя {days} календарных дней"
+  },
+  "test/formula/PAYMENT_TERMS/0": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{advance}% авансом и окончательный платеж {rest}% через {days} дней со дня приемки"
+  },
+  "test/formula/PAYMENT_TERMS/1": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "100% единственным платежом через {days} календарных дней после приемочного акта"
+  },
+  "test/formula/PAYMENT_TERMS/2": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "{advance}% до отгрузки и оставшиеся {rest}% через {days} рабочих дней после получения товара"
+  },
+  "test/formula/PAYMENT_TERMS/3": {
+    "split": "test",
+    "kind": "formula_surface",
+    "text": "50% в дату приемки и 50% спустя {days} календарных дней"
+  },
+  "train/wrapper/note/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Заметка CRM по позиции {sku}."
+  },
+  "train/wrapper/note/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Проверьте комплектацию и наличие партии {qty} единиц."
+  },
+  "train/wrapper/email/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Коллеги, направляю сводку по {sku}."
+  },
+  "train/wrapper/email/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Просьба подтвердить наличие. Количество: {qty}."
+  },
+  "train/wrapper/call/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Итоги разговора по {sku}."
+  },
+  "train/wrapper/call/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Следующий контакт — после проверки наличия {qty} единиц."
+  },
+  "train/wrapper/dialog/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Менеджер: фиксирую данные по {sku}.\nФинансист:"
+  },
+  "train/wrapper/dialog/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Менеджер: принято, проверю комплектность партии {qty} единиц."
+  },
+  "train/wrapper/memo/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Материал согласования позиции {sku}:"
+  },
+  "train/wrapper/memo/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Ответственный за логистику проверяет поставку {qty} единиц."
+  },
+  "train/wrapper/extract/0": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Выдержка для CRM. Позиция: {sku}."
+  },
+  "train/wrapper/extract/1": {
+    "split": "train",
+    "kind": "wrapper",
+    "text": "Справочный объем партии: {qty} единиц."
+  },
+  "dev/wrapper/note/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Запись сотрудника о позиции {sku}."
+  },
+  "dev/wrapper/note/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Дополнительно уточняется доступность {qty} единиц."
+  },
+  "dev/wrapper/email/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Добрый день. Собрали сведения о {sku}."
+  },
+  "dev/wrapper/email/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Ожидаем подтверждения комплекта на {qty} единиц."
+  },
+  "dev/wrapper/call/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Краткий результат консультации по {sku}."
+  },
+  "dev/wrapper/call/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "К следующему звонку нужна информация о наличии {qty} единиц."
+  },
+  "dev/wrapper/dialog/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Координатор: что известно по {sku}?\nСотрудник:"
+  },
+  "dev/wrapper/dialog/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Координатор: дополню запись данными о партии {qty} единиц."
+  },
+  "dev/wrapper/memo/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Справка для обсуждения позиции {sku}."
+  },
+  "dev/wrapper/memo/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Дальше согласуется комплектность {qty} единиц."
+  },
+  "dev/wrapper/extract/0": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Фрагмент записи о позиции {sku}."
+  },
+  "dev/wrapper/extract/1": {
+    "split": "dev",
+    "kind": "wrapper",
+    "text": "Отдельно указано количество: {qty} единиц."
+  },
+  "test/wrapper/note/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Комментарий к работе с позицией {sku}."
+  },
+  "test/wrapper/note/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Осталось сверить техническую комплектацию для {qty} единиц."
+  },
+  "test/wrapper/email/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Прошу учесть приведенные сведения по {sku}."
+  },
+  "test/wrapper/email/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Объем, который нужно проверить на складе: {qty} единиц."
+  },
+  "test/wrapper/call/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Сводка состоявшегося обсуждения позиции {sku}."
+  },
+  "test/wrapper/call/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "При следующем обращении уточним комплект из {qty} единиц."
+  },
+  "test/wrapper/dialog/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Специалист: обновляю информацию о {sku}.\nРуководитель:"
+  },
+  "test/wrapper/dialog/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Специалист: количество для проверки доступности — {qty} единиц."
+  },
+  "test/wrapper/memo/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Обновленная запись о коммерческом обсуждении {sku}."
+  },
+  "test/wrapper/memo/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "По логистической части требуется проверка партии {qty} единиц."
+  },
+  "test/wrapper/extract/0": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "Из рабочего обзора позиции {sku}:"
+  },
+  "test/wrapper/extract/1": {
+    "split": "test",
+    "kind": "wrapper",
+    "text": "В сопровождающей заявке приведено количество {qty} единиц."
+  },
+  "train/secondary_intro/0": {
+    "split": "train",
+    "kind": "secondary_intro",
+    "text": "По другой позиции {sku} в этой же CRM-записи есть отдельные сведения."
+  },
+  "train/secondary_intro/1": {
+    "split": "train",
+    "kind": "secondary_intro",
+    "text": "Дополнительная карточка касается позиции {sku}."
+  },
+  "train/secondary_intro/2": {
+    "split": "train",
+    "kind": "secondary_intro",
+    "text": "Отдельно зафиксировали условия для {sku}."
+  },
+  "dev/secondary_intro/0": {
+    "split": "dev",
+    "kind": "secondary_intro",
+    "text": "Соседняя запись относится к другому товару {sku}."
+  },
+  "dev/secondary_intro/1": {
+    "split": "dev",
+    "kind": "secondary_intro",
+    "text": "Еще одна обсуждаемая позиция имеет код {sku}."
+  },
+  "dev/secondary_intro/2": {
+    "split": "dev",
+    "kind": "secondary_intro",
+    "text": "Другая часть сводки описывает товар {sku}."
+  },
+  "test/secondary_intro/0": {
+    "split": "test",
+    "kind": "secondary_intro",
+    "text": "Следующий фрагмент касается самостоятельной позиции {sku}."
+  },
+  "test/secondary_intro/1": {
+    "split": "test",
+    "kind": "secondary_intro",
+    "text": "Далее приведены сведения по отдельному товару {sku}."
+  },
+  "test/secondary_intro/2": {
+    "split": "test",
+    "kind": "secondary_intro",
+    "text": "Дополнительная тема обсуждения связана с позицией {sku}."
+  },
+  "train/background/0": {
+    "split": "train",
+    "kind": "background",
+    "text": "Техническая часть переписки касается совместимости разъемов и расположения оборудования в шкафу. Эти характеристики доступны в открытом описании изделия. Перед подготовкой ответа сверяем комплектность поставки и обозначения на упаковке."
+  },
+  "train/background/1": {
+    "split": "train",
+    "kind": "background",
+    "text": "Клиент просит прислать открытую инструкцию по установке и перечень стандартных аксессуаров. Сотрудник проверяет, что в ссылке указана нужная редакция документа. Сведения о монтаже взяты из опубликованного руководства."
+  },
+  "train/background/2": {
+    "split": "train",
+    "kind": "background",
+    "text": "Логистика уточняет способ упаковки и возможность маркировки отдельных мест. Описание габаритов приведено в общедоступном каталоге. В ответе нужно сохранить названия позиций и связь между ними, чтобы адресат понял состав комплекта."
+  },
+  "train/background/3": {
+    "split": "train",
+    "kind": "background",
+    "text": "Первая часть разговора была посвящена документации на оборудование. Участники сравнили обозначения разъемов в опубликованной схеме и попросили проверить совместимость с существующим шкафом. Финансовые условия записаны отдельно ниже."
+  },
+  "dev/background/0": {
+    "split": "dev",
+    "kind": "background",
+    "text": "В техническом обсуждении сверяют открытые сведения о креплениях и интерфейсах. Менеджеру нужна актуальная версия общедоступной инструкции. Перед отправкой ответа проверяются ссылки на руководство и правильность обозначения модели."
+  },
+  "dev/background/1": {
+    "split": "dev",
+    "kind": "background",
+    "text": "Сотрудник собирает сведения о стандартной комплектации из опубликованного паспорта изделия. В переписке отдельно уточняется порядок передачи документации и маркировки коробок. Характеристики оборудования можно найти на открытой странице."
+  },
+  "dev/background/2": {
+    "split": "dev",
+    "kind": "background",
+    "text": "Для ответа потребуется перечислить общедоступные аксессуары и привести ссылки на их описания. Коды позиций сверяются с каталогом, чтобы не перепутать исполнения. Разговор о монтаже не устанавливает новых финансовых обязательств."
+  },
+  "dev/background/3": {
+    "split": "dev",
+    "kind": "background",
+    "text": "Обсуждение начинается с открытых технических параметров. Участники выясняют расположение соединений и порядок проверки комплекта при получении. Согласование коммерческих значений приведено в самостоятельных фрагментах записи."
+  },
+  "test/background/0": {
+    "split": "test",
+    "kind": "background",
+    "text": "Переписка содержит вопросы о подключении изделия и перечне входящих в комплект деталей. Ответственные обращаются к публичному руководству изготовителя и сверяют схему разъемов. Внешний ответ должен сохранить понятное описание комплектации."
+  },
+  "test/background/1": {
+    "split": "test",
+    "kind": "background",
+    "text": "Перед коммерческой частью участники разбирают опубликованные сведения о совместимости. Нужно приложить ссылку на верную модификацию руководства и проверить маркировку оборудования. Эти технические материалы размещены в свободном доступе."
+  },
+  "test/background/2": {
+    "split": "test",
+    "kind": "background",
+    "text": "В технической части требуются общедоступные сведения о монтаже и обозначениях аксессуаров. Менеджер собирает ссылки из открытого каталога, а логистика проверяет описание упаковки. Финансовые договоренности из этих сведений не выводятся."
+  },
+  "test/background/3": {
+    "split": "test",
+    "kind": "background",
+    "text": "Начало записи посвящено сопоставлению открытого паспорта изделия с запросом клиента. Важно корректно перечислить компоненты и оставить их коды для поиска в каталоге. Далее отдельно приведены коммерческие факты и их источники."
+  },
+  "train/repeat": {
+    "split": "train",
+    "kind": "repeat_reference",
+    "text": "Возвращаясь к основной позиции {sku}, повторяю приведенное для нее значение: {value}. Статус и источник этого значения остаются указанными выше."
+  },
+  "dev/repeat": {
+    "split": "dev",
+    "kind": "repeat_reference",
+    "text": "Еще раз фиксируем значение для основной позиции {sku}: {value}. Оно относится к тому же источнику и тем же условиям, которые описаны ранее."
+  },
+  "test/repeat": {
+    "split": "test",
+    "kind": "repeat_reference",
+    "text": "Для сверки повторно приводится значение по главной позиции {sku}: {value}. Его смысл и статус определены в предыдущем фрагменте этой записи."
+  }
+}

@@ -1,0 +1,3297 @@
+{
+  "version": 1,
+  "sources": {
+    "gliner_training_3090": {
+      "sha256": "82a2603c073e2e5591452e3a2490944838054342a85b9f062545de1b88aea686",
+      "bytes": 246777,
+      "source_id": "gliner_training_3090"
+    },
+    "short_replay_5090": {
+      "sha256": "0a5adc727eeb3439282960aa14b99970dd1991f3cb1d7c27c7847387ed10fb90",
+      "bytes": 2684772,
+      "source_id": "short_replay_5090"
+    },
+    "long_5090": {
+      "sha256": "3e9b4860e3dbe94a3d0e226eca01eeef88037365f4a521996d6b631ca4fdc6ff",
+      "bytes": 5651735,
+      "source_id": "long_5090"
+    }
+  },
+  "numeric_policy": "Exact values retained; only presentation rounded. No models, APIs or new inference.",
+  "short": {
+    "conditions": {
+      "test_documents": 1000,
+      "test_families": 100,
+      "gold_entities": 1275,
+      "public_occurrences": 575,
+      "data_hashes": {
+        "train": "a8680889b69a58aee07283bfc61ef52f870f72f717d5ac1cc6fd67527c385605",
+        "dev": "5c71a99cb44b659f2fc50e959c78914e683fce204dbdfe381ebe433a5c8f231f",
+        "test": "d06f34befb2db819eef3106c1aa1e0f99f5b53c0c9690aaeabeda37026870601"
+      },
+      "latency_documents": 200,
+      "latency_batch_size": 1,
+      "latency_ids": [
+        "test-family-0000-p0-private",
+        "test-family-0000-p2-public",
+        "test-family-0001-p0-private",
+        "test-family-0001-p2-public",
+        "test-family-0002-p0-private",
+        "test-family-0002-p2-public",
+        "test-family-0003-p0-private",
+        "test-family-0003-p2-public",
+        "test-family-0004-p0-private",
+        "test-family-0004-p2-public",
+        "test-family-0005-p0-private",
+        "test-family-0005-p2-public",
+        "test-family-0006-p0-private",
+        "test-family-0006-p2-public",
+        "test-family-0007-p0-private",
+        "test-family-0007-p2-public",
+        "test-family-0008-p0-private",
+        "test-family-0008-p2-public",
+        "test-family-0009-p0-private",
+        "test-family-0009-p2-public",
+        "test-family-0010-p0-private",
+        "test-family-0010-p2-public",
+        "test-family-0011-p0-private",
+        "test-family-0011-p2-public",
+        "test-family-0012-p0-private",
+        "test-family-0012-p2-public",
+        "test-family-0013-p0-private",
+        "test-family-0013-p2-public",
+        "test-family-0014-p0-private",
+        "test-family-0014-p2-public",
+        "test-family-0015-p0-private",
+        "test-family-0015-p2-public",
+        "test-family-0016-p0-private",
+        "test-family-0016-p2-public",
+        "test-family-0017-p0-private",
+        "test-family-0017-p2-public",
+        "test-family-0018-p0-private",
+        "test-family-0018-p2-public",
+        "test-family-0019-p0-private",
+        "test-family-0019-p2-public",
+        "test-family-0020-p0-private",
+        "test-family-0020-p2-public",
+        "test-family-0021-p0-private",
+        "test-family-0021-p2-public",
+        "test-family-0022-p0-private",
+        "test-family-0022-p2-public",
+        "test-family-0023-p0-private",
+        "test-family-0023-p2-public",
+        "test-family-0024-p0-private",
+        "test-family-0024-p2-public",
+        "test-family-0025-p0-public",
+        "test-family-0025-p3-private",
+        "test-family-0026-p0-public",
+        "test-family-0026-p3-private",
+        "test-family-0027-p0-public",
+        "test-family-0027-p3-private",
+        "test-family-0028-p0-public",
+        "test-family-0028-p3-private",
+        "test-family-0029-p0-public",
+        "test-family-0029-p3-private",
+        "test-family-0030-p0-public",
+        "test-family-0030-p3-private",
+        "test-family-0031-p0-public",
+        "test-family-0031-p3-private",
+        "test-family-0032-p0-public",
+        "test-family-0032-p3-private",
+        "test-family-0033-p0-public",
+        "test-family-0033-p3-private",
+        "test-family-0034-p0-public",
+        "test-family-0034-p3-private",
+        "test-family-0035-p0-public",
+        "test-family-0035-p3-private",
+        "test-family-0036-p0-public",
+        "test-family-0036-p3-private",
+        "test-family-0037-p0-public",
+        "test-family-0037-p3-private",
+        "test-family-0038-p0-public",
+        "test-family-0038-p3-private",
+        "test-family-0039-p0-public",
+        "test-family-0039-p3-private",
+        "test-family-0040-p0-public",
+        "test-family-0040-p3-private",
+        "test-family-0041-p0-public",
+        "test-family-0041-p3-private",
+        "test-family-0042-p0-public",
+        "test-family-0042-p3-private",
+        "test-family-0043-p0-public",
+        "test-family-0043-p3-private",
+        "test-family-0044-p0-public",
+        "test-family-0044-p3-private",
+        "test-family-0045-p0-public",
+        "test-family-0045-p3-private",
+        "test-family-0046-p0-public",
+        "test-family-0046-p3-private",
+        "test-family-0047-p0-public",
+        "test-family-0047-p3-private",
+        "test-family-0048-p0-public",
+        "test-family-0048-p3-private",
+        "test-family-0049-p0-public",
+        "test-family-0049-p3-private",
+        "test-family-0050-p1-private",
+        "test-family-0050-p3-public",
+        "test-family-0051-p1-private",
+        "test-family-0051-p3-public",
+        "test-family-0052-p1-private",
+        "test-family-0052-p3-public",
+        "test-family-0053-p1-private",
+        "test-family-0053-p3-public",
+        "test-family-0054-p1-private",
+        "test-family-0054-p3-public",
+        "test-family-0055-p1-private",
+        "test-family-0055-p3-public",
+        "test-family-0056-p1-private",
+        "test-family-0056-p3-public",
+        "test-family-0057-p1-private",
+        "test-family-0057-p3-public",
+        "test-family-0058-p1-private",
+        "test-family-0058-p3-public",
+        "test-family-0059-p1-private",
+        "test-family-0059-p3-public",
+        "test-family-0060-p1-private",
+        "test-family-0060-p3-public",
+        "test-family-0061-p1-private",
+        "test-family-0061-p3-public",
+        "test-family-0062-p1-private",
+        "test-family-0062-p3-public",
+        "test-family-0063-p1-private",
+        "test-family-0063-p3-public",
+        "test-family-0064-p1-private",
+        "test-family-0064-p3-public",
+        "test-family-0065-p1-private",
+        "test-family-0065-p3-public",
+        "test-family-0066-p1-private",
+        "test-family-0066-p3-public",
+        "test-family-0067-p1-private",
+        "test-family-0067-p3-public",
+        "test-family-0068-p1-private",
+        "test-family-0068-p3-public",
+        "test-family-0069-p1-private",
+        "test-family-0069-p3-public",
+        "test-family-0070-p1-private",
+        "test-family-0070-p3-public",
+        "test-family-0071-p1-private",
+        "test-family-0071-p3-public",
+        "test-family-0072-p1-private",
+        "test-family-0072-p3-public",
+        "test-family-0073-p1-private",
+        "test-family-0073-p3-public",
+        "test-family-0074-p1-private",
+        "test-family-0074-p3-public",
+        "test-family-0075-p1-public",
+        "test-family-0075-p4-private",
+        "test-family-0076-p1-public",
+        "test-family-0076-p4-private",
+        "test-family-0077-p1-public",
+        "test-family-0077-p4-private",
+        "test-family-0078-p1-public",
+        "test-family-0078-p4-private",
+        "test-family-0079-p1-public",
+        "test-family-0079-p4-private",
+        "test-family-0080-p1-public",
+        "test-family-0080-p4-private",
+        "test-family-0081-p1-public",
+        "test-family-0081-p4-private",
+        "test-family-0082-p1-public",
+        "test-family-0082-p4-private",
+        "test-family-0083-p1-public",
+        "test-family-0083-p4-private",
+        "test-family-0084-p1-public",
+        "test-family-0084-p4-private",
+        "test-family-0085-p1-public",
+        "test-family-0085-p4-private",
+        "test-family-0086-p1-public",
+        "test-family-0086-p4-private",
+        "test-family-0087-p1-public",
+        "test-family-0087-p4-private",
+        "test-family-0088-p1-public",
+        "test-family-0088-p4-private",
+        "test-family-0089-p1-public",
+        "test-family-0089-p4-private",
+        "test-family-0090-p1-public",
+        "test-family-0090-p4-private",
+        "test-family-0091-p1-public",
+        "test-family-0091-p4-private",
+        "test-family-0092-p1-public",
+        "test-family-0092-p4-private",
+        "test-family-0093-p1-public",
+        "test-family-0093-p4-private",
+        "test-family-0094-p1-public",
+        "test-family-0094-p4-private",
+        "test-family-0095-p1-public",
+        "test-family-0095-p4-private",
+        "test-family-0096-p1-public",
+        "test-family-0096-p4-private",
+        "test-family-0097-p1-public",
+        "test-family-0097-p4-private",
+        "test-family-0098-p1-public",
+        "test-family-0098-p4-private",
+        "test-family-0099-p1-public",
+        "test-family-0099-p4-public"
+      ]
+    },
+    "systems": [
+      {
+        "key": "base",
+        "name": "GLiNER Base",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 335,
+          "fp": 1367,
+          "fn": 940,
+          "precision": 0.19682726204465334,
+          "recall": 0.2627450980392157,
+          "f1": 0.22505878401074908
+        },
+        "coverage": {
+          "fully_masked_entities": 504,
+          "gold_entities": 1275,
+          "entity_rate": 0.3952941176470588,
+          "character_rate": 0.17438480027469383
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 368,
+          "masked_rate": 0.64,
+          "primary_count": 500,
+          "primary_masked": 314,
+          "repeated_count": 75,
+          "repeated_masked": 54
+        },
+        "selected_epoch": 0,
+        "threshold": 0.95,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 18.998678511707112,
+          "latency_p95_ms": 21.20419475540984,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "base",
+          "adapter_merged": false,
+          "weight_format": "FP32 weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0,
+          "remaining_adapter_modules": 0
+        }
+      },
+      {
+        "key": "full",
+        "name": "GLiNER · полное дообучение",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1163,
+          "fp": 33,
+          "fn": 112,
+          "precision": 0.9724080267558528,
+          "recall": 0.912156862745098,
+          "f1": 0.9413193039255362
+        },
+        "coverage": {
+          "fully_masked_entities": 1171,
+          "gold_entities": 1275,
+          "entity_rate": 0.9184313725490196,
+          "character_rate": 0.9728739842051047
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 8,
+          "masked_rate": 0.01391304347826087,
+          "primary_count": 500,
+          "primary_masked": 4,
+          "repeated_count": 75,
+          "repeated_masked": 4
+        },
+        "selected_epoch": 2,
+        "threshold": 0.95,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 17.56803903845139,
+          "latency_p95_ms": 19.657926686340943,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "full",
+          "adapter_merged": false,
+          "weight_format": "FP32 weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0,
+          "remaining_adapter_modules": 0
+        }
+      },
+      {
+        "key": "lora",
+        "name": "GLiNER LoRA",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1101,
+          "fp": 52,
+          "fn": 174,
+          "precision": 0.9549002601908065,
+          "recall": 0.8635294117647059,
+          "f1": 0.9069192751235585
+        },
+        "coverage": {
+          "fully_masked_entities": 1124,
+          "gold_entities": 1275,
+          "entity_rate": 0.8815686274509804,
+          "character_rate": 0.9494105528213346
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 4,
+          "masked_rate": 0.006956521739130435,
+          "primary_count": 500,
+          "primary_masked": 4,
+          "repeated_count": 75,
+          "repeated_masked": 0
+        },
+        "selected_epoch": 3,
+        "threshold": 0.9,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 17.537923500640318,
+          "latency_p95_ms": 19.461868159123696,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "lora",
+          "adapter_merged": true,
+          "weight_format": "FP32 merged weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0,
+          "remaining_adapter_modules": 0
+        }
+      },
+      {
+        "key": "dora",
+        "name": "GLiNER DoRA",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1114,
+          "fp": 30,
+          "fn": 161,
+          "precision": 0.9737762237762237,
+          "recall": 0.8737254901960785,
+          "f1": 0.9210417527904092
+        },
+        "coverage": {
+          "fully_masked_entities": 1139,
+          "gold_entities": 1275,
+          "entity_rate": 0.8933333333333333,
+          "character_rate": 0.946800961428408
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 0,
+          "masked_rate": 0.0,
+          "primary_count": 500,
+          "primary_masked": 0,
+          "repeated_count": 75,
+          "repeated_masked": 0
+        },
+        "selected_epoch": 3,
+        "threshold": 0.9,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 17.4571750103496,
+          "latency_p95_ms": 19.518068103934635,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "dora",
+          "adapter_merged": true,
+          "weight_format": "FP32 merged weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0,
+          "remaining_adapter_modules": 0
+        }
+      },
+      {
+        "key": "rslora",
+        "name": "GLiNER rsLoRA",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1113,
+          "fp": 60,
+          "fn": 162,
+          "precision": 0.948849104859335,
+          "recall": 0.8729411764705882,
+          "f1": 0.9093137254901961
+        },
+        "coverage": {
+          "fully_masked_entities": 1126,
+          "gold_entities": 1275,
+          "entity_rate": 0.8831372549019608,
+          "character_rate": 0.9410094998283164
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 1,
+          "masked_rate": 0.0017391304347826088,
+          "primary_count": 500,
+          "primary_masked": 1,
+          "repeated_count": 75,
+          "repeated_masked": 0
+        },
+        "selected_epoch": 1,
+        "threshold": 0.9,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 17.482617520727217,
+          "latency_p95_ms": 19.542521485709585,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "rslora",
+          "adapter_merged": true,
+          "weight_format": "FP32 merged weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0,
+          "remaining_adapter_modules": 0
+        }
+      },
+      {
+        "key": "qlora",
+        "name": "GLiNER QLoRA",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1137,
+          "fp": 42,
+          "fn": 138,
+          "precision": 0.9643765903307888,
+          "recall": 0.8917647058823529,
+          "f1": 0.9266503667481663
+        },
+        "coverage": {
+          "fully_masked_entities": 1155,
+          "gold_entities": 1275,
+          "entity_rate": 0.9058823529411765,
+          "character_rate": 0.9544466063866316
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 8,
+          "masked_rate": 0.01391304347826087,
+          "primary_count": 500,
+          "primary_masked": 8,
+          "repeated_count": 75,
+          "repeated_masked": 0
+        },
+        "selected_epoch": 3,
+        "threshold": 0.35,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 31.587831996148452,
+          "latency_p95_ms": 33.96300787862856,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "qlora",
+          "adapter_merged": false,
+          "weight_format": "4-bit quantized base + unmerged adapter",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 72,
+          "remaining_adapter_modules": 24
+        }
+      },
+      {
+        "key": "distilled_full",
+        "name": "GLiNER · полное дообучение (DeepSeek)",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1191,
+          "fp": 25,
+          "fn": 84,
+          "precision": 0.9794407894736842,
+          "recall": 0.9341176470588235,
+          "f1": 0.9562424729024488
+        },
+        "coverage": {
+          "fully_masked_entities": 1210,
+          "gold_entities": 1275,
+          "entity_rate": 0.9490196078431372,
+          "character_rate": 0.9923085727366373
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 6,
+          "masked_rate": 0.010434782608695653,
+          "primary_count": 500,
+          "primary_masked": 3,
+          "repeated_count": 75,
+          "repeated_masked": 3
+        },
+        "selected_epoch": 3,
+        "threshold": 0.6,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 17.549203505041078,
+          "latency_p95_ms": 19.678171808482144,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "variant": "distilled_full",
+          "adapter_merged": false,
+          "weight_format": "FP32 weights",
+          "compute_precision": "bf16",
+          "quantized_linear_modules": 0
+        }
+      },
+      {
+        "key": "qwen35",
+        "name": "Qwen3.5-4B-Base + NER",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 1009,
+          "fp": 255,
+          "fn": 266,
+          "precision": 0.7982594936708861,
+          "recall": 0.7913725490196079,
+          "f1": 0.7948011027963765
+        },
+        "coverage": {
+          "fully_masked_entities": 1019,
+          "gold_entities": 1275,
+          "entity_rate": 0.7992156862745098,
+          "character_rate": 0.9071305940254092,
+          "masked_gold_characters": 39628,
+          "gold_characters": 43685,
+          "not_fully_masked_entities": 256
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 5,
+          "masked_rate": 0.008695652173913044,
+          "primary_count": 500,
+          "primary_masked": 3,
+          "repeated_count": 75,
+          "repeated_masked": 2
+        },
+        "selected_epoch": 3,
+        "threshold": 0.95,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 54.44146750960499,
+          "latency_p95_ms": 86.83488357928582,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "adapter_merged": false,
+          "repeat": 2
+        }
+      },
+      {
+        "key": "gemma4",
+        "name": "Gemma 4 E2B + NER",
+        "kind": "preserved_ner",
+        "metrics": {
+          "tp": 867,
+          "fp": 412,
+          "fn": 408,
+          "precision": 0.6778733385457388,
+          "recall": 0.68,
+          "f1": 0.6789350039154268
+        },
+        "coverage": {
+          "fully_masked_entities": 902,
+          "gold_entities": 1275,
+          "entity_rate": 0.7074509803921568,
+          "character_rate": 0.798878333524093,
+          "masked_gold_characters": 34899,
+          "gold_characters": 43685,
+          "not_fully_masked_entities": 373
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 4,
+          "masked_rate": 0.006956521739130435,
+          "primary_count": 500,
+          "primary_masked": 4,
+          "repeated_count": 75,
+          "repeated_masked": 0
+        },
+        "selected_epoch": 1,
+        "threshold": 0.95,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 41.84800750226714,
+          "latency_p95_ms": 57.74040131655056,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": {
+          "adapter_merged": false,
+          "repeat": 2
+        }
+      },
+      {
+        "key": "qwen35_prompt",
+        "name": "Qwen3.5-4B + промпт",
+        "kind": "generative_prompt",
+        "metrics": {
+          "tp": 745,
+          "fp": 175,
+          "fn": 530,
+          "precision": 0.8097826086956522,
+          "recall": 0.5843137254901961,
+          "f1": 0.6788154897494305
+        },
+        "coverage": {
+          "fully_masked_entities": 782,
+          "gold_entities": 1275,
+          "entity_rate": 0.6133333333333333,
+          "character_rate": 0.6251573766739156,
+          "masked_gold_characters": 27310,
+          "gold_characters": 43685,
+          "not_fully_masked_entities": 493
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 77,
+          "masked_rate": 0.13391304347826086,
+          "primary_count": 500,
+          "primary_masked": 71,
+          "repeated_count": 75,
+          "repeated_masked": 6
+        },
+        "selected_epoch": null,
+        "threshold": null,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 796.981366496766,
+          "latency_p95_ms": 2107.0969399705064,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": null
+      },
+      {
+        "key": "gemma4_prompt",
+        "name": "Gemma 4 E2B-it + промпт",
+        "kind": "generative_prompt",
+        "metrics": {
+          "tp": 121,
+          "fp": 198,
+          "fn": 1154,
+          "precision": 0.3793103448275862,
+          "recall": 0.09490196078431372,
+          "f1": 0.15181932245922208
+        },
+        "coverage": {
+          "fully_masked_entities": 201,
+          "gold_entities": 1275,
+          "entity_rate": 0.15764705882352942,
+          "character_rate": 0.12356644157033307,
+          "masked_gold_characters": 5398,
+          "gold_characters": 43685,
+          "not_fully_masked_entities": 1074
+        },
+        "public_all": {
+          "count": 575,
+          "masked": 117,
+          "masked_rate": 0.20347826086956522,
+          "primary_count": 500,
+          "primary_masked": 107,
+          "repeated_count": 75,
+          "repeated_masked": 10
+        },
+        "selected_epoch": null,
+        "threshold": null,
+        "speed": {
+          "latency_documents": 200,
+          "latency_batch_size": 1,
+          "latency_p50_ms": 1267.6533085177653,
+          "latency_p95_ms": 3443.8877958455114,
+          "gpu": "NVIDIA GeForce RTX 5090"
+        },
+        "inference_policy": null
+      }
+    ]
+  },
+  "gliner_training": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_memory_gib": 24,
+    "conditions": {
+      "train_documents": 5000,
+      "dev_documents": 500,
+      "training_seed": 20261114,
+      "epochs": 3,
+      "effective_batch": 16
+    },
+    "time_scope": "three full epochs; includes checkpoints, excludes dev and teacher API; selected epoch can be earlier",
+    "systems": [
+      {
+        "key": "base",
+        "name": "GLiNER Base",
+        "label_source": "none",
+        "selected_epoch": 0,
+        "selected_threshold": 0.95,
+        "training": null
+      },
+      {
+        "key": "full",
+        "name": "GLiNER · полное дообучение",
+        "label_source": "author",
+        "selected_epoch": 2,
+        "selected_threshold": 0.95,
+        "training": {
+          "training_seconds_including_checkpoint": 1000.8548703450069,
+          "checkpoint_seconds": 13.440301766997436,
+          "peak_allocated_bytes": 7555178496,
+          "peak_reserved_bytes": 10286530560,
+          "trainable_parameters": 287355159,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      },
+      {
+        "key": "lora",
+        "name": "GLiNER LoRA",
+        "label_source": "author",
+        "selected_epoch": 3,
+        "selected_threshold": 0.9,
+        "training": {
+          "training_seconds_including_checkpoint": 836.3829384499986,
+          "checkpoint_seconds": 0.11248767102370039,
+          "peak_allocated_bytes": 3905131008,
+          "peak_reserved_bytes": 7172259840,
+          "trainable_parameters": 589824,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      },
+      {
+        "key": "dora",
+        "name": "GLiNER DoRA",
+        "label_source": "author",
+        "selected_epoch": 3,
+        "selected_threshold": 0.9,
+        "training": {
+          "training_seconds_including_checkpoint": 1040.132583759987,
+          "checkpoint_seconds": 0.11783273200853728,
+          "peak_allocated_bytes": 4072046592,
+          "peak_reserved_bytes": 7361003520,
+          "trainable_parameters": 608256,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      },
+      {
+        "key": "rslora",
+        "name": "GLiNER rsLoRA",
+        "label_source": "author",
+        "selected_epoch": 1,
+        "selected_threshold": 0.9,
+        "training": {
+          "training_seconds_including_checkpoint": 829.9848963739933,
+          "checkpoint_seconds": 0.11670851698727347,
+          "peak_allocated_bytes": 3905131008,
+          "peak_reserved_bytes": 7172259840,
+          "trainable_parameters": 589824,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      },
+      {
+        "key": "qlora",
+        "name": "GLiNER QLoRA",
+        "label_source": "author",
+        "selected_epoch": 3,
+        "selected_threshold": 0.35,
+        "training": {
+          "training_seconds_including_checkpoint": 1078.1907254029938,
+          "checkpoint_seconds": 0.14230464200954884,
+          "peak_allocated_bytes": 3438831616,
+          "peak_reserved_bytes": 6710886400,
+          "trainable_parameters": 589824,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      },
+      {
+        "key": "distilled_full",
+        "name": "GLiNER · полное дообучение (DeepSeek)",
+        "label_source": "teacher",
+        "selected_epoch": 3,
+        "selected_threshold": 0.6,
+        "training": {
+          "training_seconds_including_checkpoint": 1006.3093475619971,
+          "checkpoint_seconds": 12.924394219007809,
+          "peak_allocated_bytes": 7555178496,
+          "peak_reserved_bytes": 10286530560,
+          "trainable_parameters": 287355159,
+          "optimizer_steps": 939,
+          "examples_processed": 15000
+        }
+      }
+    ]
+  },
+  "long": {
+    "conditions": {
+      "documents": 1000,
+      "reference_length_tiers": [
+        1000,
+        2000,
+        4000,
+        8000
+      ],
+      "documents_per_length": 250,
+      "secret_entities": 480,
+      "public_targets": 480,
+      "neutral_documents": 40,
+      "batch_size": 1,
+      "gpu": "NVIDIA GeForce RTX 5090"
+    },
+    "scope": {
+      "original_planned_configurations": 18,
+      "in_scope_configurations": 16,
+      "user_excluded_configurations": [
+        "qwen35_prompt--full_document",
+        "gemma4_prompt--full_document"
+      ],
+      "in_scope_status_counts": {
+        "complete": 16
+      }
+    },
+    "data_sha256": "ba52efd2ab5b24caebe4903675e3fc391899e382fc69ddfc2b0595e2f0c3cefb",
+    "systems": [
+      {
+        "id": "base--full_document",
+        "key": "base",
+        "name": "GLiNER Base / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 141,
+          "fp": 2635,
+          "fn": 339,
+          "precision": 0.050792507204610954,
+          "recall": 0.29375,
+          "f1": 0.0866093366093366
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 176,
+          "partially_masked_entities": 134,
+          "unmasked_entities": 170,
+          "gold_characters": 17664,
+          "masked_gold_characters": 3923
+        },
+        "public": {
+          "count": 480,
+          "masked": 273
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 31,
+              "fp": 148,
+              "fn": 89,
+              "precision": 0.17318435754189945,
+              "recall": 0.25833333333333336,
+              "f1": 0.20735785953177258
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 39,
+              "partially_masked_entities": 27,
+              "unmasked_entities": 54,
+              "gold_characters": 4416,
+              "masked_gold_characters": 807
+            },
+            "public": {
+              "count": 120,
+              "masked": 62
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 40.31343059614301,
+              "latency_p95_ms": 46.97513810824602,
+              "peak_allocated_bytes": 1786345984,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 35,
+              "fp": 180,
+              "fn": 85,
+              "precision": 0.16279069767441862,
+              "recall": 0.2916666666666667,
+              "f1": 0.208955223880597
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 46,
+              "partially_masked_entities": 36,
+              "unmasked_entities": 38,
+              "gold_characters": 4416,
+              "masked_gold_characters": 1047
+            },
+            "public": {
+              "count": 120,
+              "masked": 74
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 95.1747598592192,
+              "latency_p95_ms": 103.64969247020781,
+              "peak_allocated_bytes": 2681402368,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 37,
+              "fp": 873,
+              "fn": 83,
+              "precision": 0.04065934065934066,
+              "recall": 0.30833333333333335,
+              "f1": 0.07184466019417475
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 44,
+              "partially_masked_entities": 38,
+              "unmasked_entities": 38,
+              "gold_characters": 4416,
+              "masked_gold_characters": 1072
+            },
+            "public": {
+              "count": 120,
+              "masked": 69
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 300.84006511606276,
+              "latency_p95_ms": 317.8416238864883,
+              "peak_allocated_bytes": 5951105024,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 38,
+              "fp": 1434,
+              "fn": 82,
+              "precision": 0.025815217391304348,
+              "recall": 0.31666666666666665,
+              "f1": 0.04773869346733668
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 47,
+              "partially_masked_entities": 33,
+              "unmasked_entities": 40,
+              "gold_characters": 4416,
+              "masked_gold_characters": 997
+            },
+            "public": {
+              "count": 120,
+              "masked": 68
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1065.7600115519017,
+              "latency_p95_ms": 1106.8848666269332,
+              "peak_allocated_bytes": 18215418880,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "base--word_chunks",
+        "key": "base",
+        "name": "GLiNER Base / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 125,
+          "fp": 562,
+          "fn": 355,
+          "precision": 0.1819505094614265,
+          "recall": 0.2604166666666667,
+          "f1": 0.21422450728363324
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 161,
+          "partially_masked_entities": 115,
+          "unmasked_entities": 204,
+          "gold_characters": 17664,
+          "masked_gold_characters": 3250
+        },
+        "public": {
+          "count": 480,
+          "masked": 235
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 32,
+              "fp": 142,
+              "fn": 88,
+              "precision": 0.1839080459770115,
+              "recall": 0.26666666666666666,
+              "f1": 0.21768707482993196
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 40,
+              "partially_masked_entities": 29,
+              "unmasked_entities": 51,
+              "gold_characters": 4416,
+              "masked_gold_characters": 792
+            },
+            "public": {
+              "count": 120,
+              "masked": 60
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 68.83260188624263,
+              "latency_p95_ms": 74.98057438060641,
+              "peak_allocated_bytes": 1585102336,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 31,
+              "fp": 139,
+              "fn": 89,
+              "precision": 0.18235294117647058,
+              "recall": 0.25833333333333336,
+              "f1": 0.21379310344827587
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 40,
+              "partially_masked_entities": 28,
+              "unmasked_entities": 52,
+              "gold_characters": 4416,
+              "masked_gold_characters": 807
+            },
+            "public": {
+              "count": 120,
+              "masked": 58
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 126.10959610901773,
+              "latency_p95_ms": 134.00881350971756,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 32,
+              "fp": 144,
+              "fn": 88,
+              "precision": 0.18181818181818182,
+              "recall": 0.26666666666666666,
+              "f1": 0.21621621621621623
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 42,
+              "partially_masked_entities": 31,
+              "unmasked_entities": 47,
+              "gold_characters": 4416,
+              "masked_gold_characters": 861
+            },
+            "public": {
+              "count": 120,
+              "masked": 60
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 241.51864903979003,
+              "latency_p95_ms": 251.31530563812703,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 30,
+              "fp": 137,
+              "fn": 90,
+              "precision": 0.17964071856287425,
+              "recall": 0.25,
+              "f1": 0.20905923344947736
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 39,
+              "partially_masked_entities": 27,
+              "unmasked_entities": 54,
+              "gold_characters": 4416,
+              "masked_gold_characters": 790
+            },
+            "public": {
+              "count": 120,
+              "masked": 57
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 444.2699607461691,
+              "latency_p95_ms": 460.5229543056339,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          }
+        }
+      },
+      {
+        "id": "full--full_document",
+        "key": "full",
+        "name": "GLiNER · полное дообучение / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 409,
+          "fp": 86,
+          "fn": 71,
+          "precision": 0.8262626262626263,
+          "recall": 0.8520833333333333,
+          "f1": 0.838974358974359
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 449,
+          "partially_masked_entities": 8,
+          "unmasked_entities": 23,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17145
+        },
+        "public": {
+          "count": 480,
+          "masked": 38
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 105,
+              "fp": 19,
+              "fn": 15,
+              "precision": 0.8467741935483871,
+              "recall": 0.875,
+              "f1": 0.860655737704918
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4307
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 32.34628424979746,
+              "latency_p95_ms": 35.73941045906395,
+              "peak_allocated_bytes": 1786345984,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 19,
+              "fn": 16,
+              "precision": 0.8455284552845529,
+              "recall": 0.8666666666666667,
+              "f1": 0.8559670781893004
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4297
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 80.30910859815776,
+              "latency_p95_ms": 84.06384664122015,
+              "peak_allocated_bytes": 2681402368,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 100,
+              "fp": 23,
+              "fn": 20,
+              "precision": 0.8130081300813008,
+              "recall": 0.8333333333333334,
+              "f1": 0.823045267489712
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 2,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4306
+            },
+            "public": {
+              "count": 120,
+              "masked": 9
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 276.63278859108686,
+              "latency_p95_ms": 284.5405829604715,
+              "peak_allocated_bytes": 5951105024,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 100,
+              "fp": 25,
+              "fn": 20,
+              "precision": 0.8,
+              "recall": 0.8333333333333334,
+              "f1": 0.8163265306122449
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 8,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4235
+            },
+            "public": {
+              "count": 120,
+              "masked": 13
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1016.1971526686102,
+              "latency_p95_ms": 1043.7020616140217,
+              "peak_allocated_bytes": 18215418880,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "full--word_chunks",
+        "key": "full",
+        "name": "GLiNER · полное дообучение / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 424,
+          "fp": 48,
+          "fn": 56,
+          "precision": 0.8983050847457628,
+          "recall": 0.8833333333333333,
+          "f1": 0.8907563025210085
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 438,
+          "partially_masked_entities": 12,
+          "unmasked_entities": 30,
+          "gold_characters": 17664,
+          "masked_gold_characters": 16776
+        },
+        "public": {
+          "count": 480,
+          "masked": 22
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 14,
+              "fn": 14,
+              "precision": 0.8833333333333333,
+              "recall": 0.8833333333333333,
+              "f1": 0.8833333333333333
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 111,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4235
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 59.57662733271718,
+              "latency_p95_ms": 62.514136475510895,
+              "peak_allocated_bytes": 1585102336,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 11,
+              "fn": 14,
+              "precision": 0.905982905982906,
+              "recall": 0.8833333333333333,
+              "f1": 0.8945147679324894
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 110,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4225
+            },
+            "public": {
+              "count": 120,
+              "masked": 4
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 112.42287582717836,
+              "latency_p95_ms": 116.44267155788839,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 107,
+              "fp": 11,
+              "fn": 13,
+              "precision": 0.9067796610169492,
+              "recall": 0.8916666666666667,
+              "f1": 0.8991596638655462
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 109,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 8,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4163
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 219.9371331371367,
+              "latency_p95_ms": 226.4364644885063,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 105,
+              "fp": 12,
+              "fn": 15,
+              "precision": 0.8974358974358975,
+              "recall": 0.875,
+              "f1": 0.8860759493670886
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 108,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 9,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4153
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 409.5133291557431,
+              "latency_p95_ms": 419.152332469821,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          }
+        }
+      },
+      {
+        "id": "lora--full_document",
+        "key": "lora",
+        "name": "GLiNER LoRA / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 413,
+          "fp": 137,
+          "fn": 67,
+          "precision": 0.7509090909090909,
+          "recall": 0.8604166666666667,
+          "f1": 0.8019417475728156
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 455,
+          "partially_masked_entities": 3,
+          "unmasked_entities": 22,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17174
+        },
+        "public": {
+          "count": 480,
+          "masked": 92
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 105,
+              "fp": 21,
+              "fn": 15,
+              "precision": 0.8333333333333334,
+              "recall": 0.875,
+              "f1": 0.8536585365853658
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4329
+            },
+            "public": {
+              "count": 120,
+              "masked": 12
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 32.922116573899984,
+              "latency_p95_ms": 38.31525731366127,
+              "peak_allocated_bytes": 1610630656,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 103,
+              "fp": 28,
+              "fn": 17,
+              "precision": 0.7862595419847328,
+              "recall": 0.8583333333333333,
+              "f1": 0.8207171314741036
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4329
+            },
+            "public": {
+              "count": 120,
+              "masked": 17
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 81.21922821737826,
+              "latency_p95_ms": 86.08046071603894,
+              "peak_allocated_bytes": 2501482496,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 32,
+              "fn": 14,
+              "precision": 0.7681159420289855,
+              "recall": 0.8833333333333333,
+              "f1": 0.8217054263565892
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 116,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4361
+            },
+            "public": {
+              "count": 120,
+              "masked": 22
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 276.5726230572909,
+              "latency_p95_ms": 288.8954863185063,
+              "peak_allocated_bytes": 5764049920,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 99,
+              "fp": 56,
+              "fn": 21,
+              "precision": 0.6387096774193548,
+              "recall": 0.825,
+              "f1": 0.72
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 111,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4155
+            },
+            "public": {
+              "count": 120,
+              "masked": 41
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1020.7207489293069,
+              "latency_p95_ms": 1052.0127391675487,
+              "peak_allocated_bytes": 18037865472,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "lora--word_chunks",
+        "key": "lora",
+        "name": "GLiNER LoRA / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 419,
+          "fp": 71,
+          "fn": 61,
+          "precision": 0.8551020408163266,
+          "recall": 0.8729166666666667,
+          "f1": 0.8639175257731959
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 447,
+          "partially_masked_entities": 5,
+          "unmasked_entities": 28,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17209
+        },
+        "public": {
+          "count": 480,
+          "masked": 38
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 18,
+              "fn": 14,
+              "precision": 0.8548387096774194,
+              "recall": 0.8833333333333333,
+              "f1": 0.8688524590163934
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 2,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4324
+            },
+            "public": {
+              "count": 120,
+              "masked": 9
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 62.962942058220506,
+              "latency_p95_ms": 69.63075464591383,
+              "peak_allocated_bytes": 1397835264,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 16,
+              "fn": 16,
+              "precision": 0.8666666666666667,
+              "recall": 0.8666666666666667,
+              "f1": 0.8666666666666667
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 111,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 8,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4292
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 120.97303569316864,
+              "latency_p95_ms": 146.39977545011786,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 18,
+              "fn": 16,
+              "precision": 0.8524590163934426,
+              "recall": 0.8666666666666667,
+              "f1": 0.859504132231405
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 111,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 8,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4291
+            },
+            "public": {
+              "count": 120,
+              "masked": 10
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 238.45321033149958,
+              "latency_p95_ms": 255.14769940637044,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 105,
+              "fp": 19,
+              "fn": 15,
+              "precision": 0.8467741935483871,
+              "recall": 0.875,
+              "f1": 0.860655737704918
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4302
+            },
+            "public": {
+              "count": 120,
+              "masked": 11
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 446.3015131186694,
+              "latency_p95_ms": 462.08253318909556,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          }
+        }
+      },
+      {
+        "id": "dora--full_document",
+        "key": "dora",
+        "name": "GLiNER DoRA / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 402,
+          "fp": 96,
+          "fn": 78,
+          "precision": 0.8072289156626506,
+          "recall": 0.8375,
+          "f1": 0.8220858895705522
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 444,
+          "partially_masked_entities": 5,
+          "unmasked_entities": 31,
+          "gold_characters": 17664,
+          "masked_gold_characters": 16831
+        },
+        "public": {
+          "count": 480,
+          "masked": 49
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 18,
+              "fn": 14,
+              "precision": 0.8548387096774194,
+              "recall": 0.8833333333333333,
+              "f1": 0.8688524590163934
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4329
+            },
+            "public": {
+              "count": 120,
+              "masked": 10
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 32.86177688278258,
+              "latency_p95_ms": 36.92914086859673,
+              "peak_allocated_bytes": 1610630656,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 103,
+              "fp": 21,
+              "fn": 17,
+              "precision": 0.8306451612903226,
+              "recall": 0.8583333333333333,
+              "f1": 0.8442622950819673
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4329
+            },
+            "public": {
+              "count": 120,
+              "masked": 10
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 80.70792583748698,
+              "latency_p95_ms": 85.54834492970258,
+              "peak_allocated_bytes": 2501482496,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 100,
+              "fp": 23,
+              "fn": 20,
+              "precision": 0.8130081300813008,
+              "recall": 0.8333333333333334,
+              "f1": 0.823045267489712
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 109,
+              "partially_masked_entities": 2,
+              "unmasked_entities": 9,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4114
+            },
+            "public": {
+              "count": 120,
+              "masked": 12
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 276.15520590916276,
+              "latency_p95_ms": 285.58101940434426,
+              "peak_allocated_bytes": 5764049920,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 93,
+              "fp": 34,
+              "fn": 27,
+              "precision": 0.7322834645669292,
+              "recall": 0.775,
+              "f1": 0.7530364372469636
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 107,
+              "partially_masked_entities": 3,
+              "unmasked_entities": 10,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4059
+            },
+            "public": {
+              "count": 120,
+              "masked": 17
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1017.7983264438808,
+              "latency_p95_ms": 1047.6157928816974,
+              "peak_allocated_bytes": 18037865472,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "dora--word_chunks",
+        "key": "dora",
+        "name": "GLiNER DoRA / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 422,
+          "fp": 69,
+          "fn": 58,
+          "precision": 0.8594704684317719,
+          "recall": 0.8791666666666667,
+          "f1": 0.8692070030895983
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 456,
+          "partially_masked_entities": 2,
+          "unmasked_entities": 22,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17368
+        },
+        "public": {
+          "count": 480,
+          "masked": 33
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 107,
+              "fp": 18,
+              "fn": 13,
+              "precision": 0.856,
+              "recall": 0.8916666666666667,
+              "f1": 0.8734693877551021
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 116,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 3,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4372
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 62.35146359540522,
+              "latency_p95_ms": 65.71307675912975,
+              "peak_allocated_bytes": 1397835264,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 105,
+              "fp": 16,
+              "fn": 15,
+              "precision": 0.8677685950413223,
+              "recall": 0.875,
+              "f1": 0.8713692946058091
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4324
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 120.13624073006213,
+              "latency_p95_ms": 124.0633639972657,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 18,
+              "fn": 16,
+              "precision": 0.8524590163934426,
+              "recall": 0.8666666666666667,
+              "f1": 0.859504132231405
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4322
+            },
+            "public": {
+              "count": 120,
+              "masked": 9
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 236.83099634945393,
+              "latency_p95_ms": 243.09358247555792,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 106,
+              "fp": 17,
+              "fn": 14,
+              "precision": 0.8617886178861789,
+              "recall": 0.8833333333333333,
+              "f1": 0.8724279835390947
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 115,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4350
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 443.7804885674268,
+              "latency_p95_ms": 456.77894465625286,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          }
+        }
+      },
+      {
+        "id": "rslora--full_document",
+        "key": "rslora",
+        "name": "GLiNER rsLoRA / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 432,
+          "fp": 73,
+          "fn": 48,
+          "precision": 0.8554455445544554,
+          "recall": 0.9,
+          "f1": 0.8771573604060914
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 460,
+          "partially_masked_entities": 0,
+          "unmasked_entities": 20,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17298
+        },
+        "public": {
+          "count": 480,
+          "masked": 45
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 110,
+              "fp": 12,
+              "fn": 10,
+              "precision": 0.9016393442622951,
+              "recall": 0.9166666666666666,
+              "f1": 0.9090909090909091
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 116,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4366
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 32.21461293287575,
+              "latency_p95_ms": 35.735952225513756,
+              "peak_allocated_bytes": 1610630656,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 111,
+              "fp": 15,
+              "fn": 9,
+              "precision": 0.8809523809523809,
+              "recall": 0.925,
+              "f1": 0.9024390243902439
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 116,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4366
+            },
+            "public": {
+              "count": 120,
+              "masked": 10
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 81.1310529243201,
+              "latency_p95_ms": 85.7858469011262,
+              "peak_allocated_bytes": 2501482496,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 109,
+              "fp": 21,
+              "fn": 11,
+              "precision": 0.8384615384615385,
+              "recall": 0.9083333333333333,
+              "f1": 0.872
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 115,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4294
+            },
+            "public": {
+              "count": 120,
+              "masked": 15
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 276.63687872700393,
+              "latency_p95_ms": 285.60434454120696,
+              "peak_allocated_bytes": 5764049920,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 102,
+              "fp": 25,
+              "fn": 18,
+              "precision": 0.8031496062992126,
+              "recall": 0.85,
+              "f1": 0.8259109311740891
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4272
+            },
+            "public": {
+              "count": 120,
+              "masked": 14
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1016.3891334086657,
+              "latency_p95_ms": 1044.5006008958444,
+              "peak_allocated_bytes": 18037865472,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "rslora--word_chunks",
+        "key": "rslora",
+        "name": "GLiNER rsLoRA / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 433,
+          "fp": 50,
+          "fn": 47,
+          "precision": 0.8964803312629399,
+          "recall": 0.9020833333333333,
+          "f1": 0.8992731048805815
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 455,
+          "partially_masked_entities": 4,
+          "unmasked_entities": 21,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17390
+        },
+        "public": {
+          "count": 480,
+          "masked": 24
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 108,
+              "fp": 14,
+              "fn": 12,
+              "precision": 0.8852459016393442,
+              "recall": 0.9,
+              "f1": 0.8925619834710744
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 115,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4358
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 61.759640695527196,
+              "latency_p95_ms": 64.49321967083961,
+              "peak_allocated_bytes": 1397835264,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 108,
+              "fp": 12,
+              "fn": 12,
+              "precision": 0.9,
+              "recall": 0.9,
+              "f1": 0.9
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4337
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 119.27331541664898,
+              "latency_p95_ms": 123.64743647631258,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 107,
+              "fp": 13,
+              "fn": 13,
+              "precision": 0.8916666666666667,
+              "recall": 0.8916666666666667,
+              "f1": 0.8916666666666667
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4342
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 235.5111890938133,
+              "latency_p95_ms": 240.23173341993243,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 110,
+              "fp": 11,
+              "fn": 10,
+              "precision": 0.9090909090909091,
+              "recall": 0.9166666666666666,
+              "f1": 0.9128630705394191
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4353
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 441.6064110118896,
+              "latency_p95_ms": 452.149014454335,
+              "peak_allocated_bytes": 1399337472,
+              "peak_reserved_bytes": 1732247552
+            }
+          }
+        }
+      },
+      {
+        "id": "qlora--full_document",
+        "key": "qlora",
+        "name": "GLiNER QLoRA / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 406,
+          "fp": 135,
+          "fn": 74,
+          "precision": 0.7504621072088724,
+          "recall": 0.8458333333333333,
+          "f1": 0.7952987267384917
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 459,
+          "partially_masked_entities": 0,
+          "unmasked_entities": 21,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17194
+        },
+        "public": {
+          "count": 480,
+          "masked": 80
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 103,
+              "fp": 30,
+              "fn": 17,
+              "precision": 0.7744360902255639,
+              "recall": 0.8583333333333333,
+              "f1": 0.8142292490118577
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 115,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4345
+            },
+            "public": {
+              "count": 120,
+              "masked": 18
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 52.509891567751765,
+              "latency_p95_ms": 56.71738754026592,
+              "peak_allocated_bytes": 1317007872,
+              "peak_reserved_bytes": 31734104064
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 103,
+              "fp": 31,
+              "fn": 17,
+              "precision": 0.7686567164179104,
+              "recall": 0.8583333333333333,
+              "f1": 0.8110236220472441
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 115,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4345
+            },
+            "public": {
+              "count": 120,
+              "masked": 19
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 85.45302879065275,
+              "latency_p95_ms": 89.48852699249983,
+              "peak_allocated_bytes": 2208854016,
+              "peak_reserved_bytes": 31734104064
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 35,
+              "fn": 16,
+              "precision": 0.7482014388489209,
+              "recall": 0.8666666666666667,
+              "f1": 0.803088803088803
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 116,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 4,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4361
+            },
+            "public": {
+              "count": 120,
+              "masked": 21
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 280.9146335348487,
+              "latency_p95_ms": 289.02327134273946,
+              "peak_allocated_bytes": 5471021056,
+              "peak_reserved_bytes": 31734104064
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 96,
+              "fp": 39,
+              "fn": 24,
+              "precision": 0.7111111111111111,
+              "recall": 0.8,
+              "f1": 0.7529411764705882
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4143
+            },
+            "public": {
+              "count": 120,
+              "masked": 22
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1024.640676099807,
+              "latency_p95_ms": 1053.391095995903,
+              "peak_allocated_bytes": 17744836608,
+              "peak_reserved_bytes": 32510050304
+            }
+          }
+        }
+      },
+      {
+        "id": "qlora--word_chunks",
+        "key": "qlora",
+        "name": "GLiNER QLoRA / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 416,
+          "fp": 76,
+          "fn": 64,
+          "precision": 0.8455284552845529,
+          "recall": 0.8666666666666667,
+          "f1": 0.8559670781893004
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 454,
+          "partially_masked_entities": 1,
+          "unmasked_entities": 25,
+          "gold_characters": 17664,
+          "masked_gold_characters": 16989
+        },
+        "public": {
+          "count": 480,
+          "masked": 37
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 22,
+              "fn": 16,
+              "precision": 0.8253968253968254,
+              "recall": 0.8666666666666667,
+              "f1": 0.8455284552845529
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 1,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4289
+            },
+            "public": {
+              "count": 120,
+              "masked": 11
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 100.95336334779859,
+              "latency_p95_ms": 104.85660035628825,
+              "peak_allocated_bytes": 1104368128,
+              "peak_reserved_bytes": 1413480448
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 18,
+              "fn": 16,
+              "precision": 0.8524590163934426,
+              "recall": 0.8666666666666667,
+              "f1": 0.859504132231405
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 114,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 6,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4278
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 195.60974626801908,
+              "latency_p95_ms": 201.42258070409298,
+              "peak_allocated_bytes": 1104960000,
+              "peak_reserved_bytes": 1413480448
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 17,
+              "fn": 16,
+              "precision": 0.859504132231405,
+              "recall": 0.8666666666666667,
+              "f1": 0.8630705394190872
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4211
+            },
+            "public": {
+              "count": 120,
+              "masked": 8
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 386.9977523572743,
+              "latency_p95_ms": 394.2677495069802,
+              "peak_allocated_bytes": 1104960000,
+              "peak_reserved_bytes": 1413480448
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 19,
+              "fn": 16,
+              "precision": 0.8455284552845529,
+              "recall": 0.8666666666666667,
+              "f1": 0.8559670781893004
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 113,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 7,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4211
+            },
+            "public": {
+              "count": 120,
+              "masked": 10
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 724.1137335076928,
+              "latency_p95_ms": 735.5857187416404,
+              "peak_allocated_bytes": 1104960000,
+              "peak_reserved_bytes": 1413480448
+            }
+          }
+        }
+      },
+      {
+        "id": "distilled_full--full_document",
+        "key": "distilled_full",
+        "name": "GLiNER · полное дообучение (DeepSeek) / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 441,
+          "fp": 59,
+          "fn": 39,
+          "precision": 0.882,
+          "recall": 0.91875,
+          "f1": 0.9
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 468,
+          "partially_masked_entities": 0,
+          "unmasked_entities": 12,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17387
+        },
+        "public": {
+          "count": 480,
+          "masked": 32
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 111,
+              "fp": 13,
+              "fn": 9,
+              "precision": 0.8951612903225806,
+              "recall": 0.925,
+              "f1": 0.9098360655737705
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 118,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 2,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4282
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 32.68866054713726,
+              "latency_p95_ms": 36.897810245864086,
+              "peak_allocated_bytes": 1786345984,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 114,
+              "fp": 12,
+              "fn": 6,
+              "precision": 0.9047619047619048,
+              "recall": 0.95,
+              "f1": 0.926829268292683
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 120,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 0,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4416
+            },
+            "public": {
+              "count": 120,
+              "masked": 6
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 81.13207807764411,
+              "latency_p95_ms": 85.67783255130053,
+              "peak_allocated_bytes": 2681402368,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 112,
+              "fp": 15,
+              "fn": 8,
+              "precision": 0.8818897637795275,
+              "recall": 0.9333333333333333,
+              "f1": 0.9068825910931174
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 118,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 2,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4393
+            },
+            "public": {
+              "count": 120,
+              "masked": 9
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 276.2757164891809,
+              "latency_p95_ms": 283.92027700319886,
+              "peak_allocated_bytes": 5951105024,
+              "peak_reserved_bytes": 32099008512
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 104,
+              "fp": 19,
+              "fn": 16,
+              "precision": 0.8455284552845529,
+              "recall": 0.8666666666666667,
+              "f1": 0.8559670781893004
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 112,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 8,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4296
+            },
+            "public": {
+              "count": 120,
+              "masked": 11
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1015.0583712384105,
+              "latency_p95_ms": 1040.5078986193985,
+              "peak_allocated_bytes": 18215418880,
+              "peak_reserved_bytes": 32849788928
+            }
+          }
+        }
+      },
+      {
+        "id": "distilled_full--word_chunks",
+        "key": "distilled_full",
+        "name": "GLiNER · полное дообучение (DeepSeek) / окна384+64",
+        "mode": "word_chunks",
+        "status": "complete",
+        "metrics": {
+          "tp": 450,
+          "fp": 34,
+          "fn": 30,
+          "precision": 0.9297520661157025,
+          "recall": 0.9375,
+          "f1": 0.9336099585062241
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 471,
+          "partially_masked_entities": 0,
+          "unmasked_entities": 9,
+          "gold_characters": 17664,
+          "masked_gold_characters": 17287
+        },
+        "public": {
+          "count": 480,
+          "masked": 13
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 111,
+              "fp": 11,
+              "fn": 9,
+              "precision": 0.9098360655737705,
+              "recall": 0.925,
+              "f1": 0.9173553719008265
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 118,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 2,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4333
+            },
+            "public": {
+              "count": 120,
+              "masked": 4
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 58.96644899621606,
+              "latency_p95_ms": 61.4867168944329,
+              "peak_allocated_bytes": 1585102336,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 113,
+              "fp": 8,
+              "fn": 7,
+              "precision": 0.9338842975206612,
+              "recall": 0.9416666666666667,
+              "f1": 0.9377593360995851
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 118,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 2,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4344
+            },
+            "public": {
+              "count": 120,
+              "masked": 3
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 111.28221894614398,
+              "latency_p95_ms": 114.0449287602678,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 113,
+              "fp": 7,
+              "fn": 7,
+              "precision": 0.9416666666666667,
+              "recall": 0.9416666666666667,
+              "f1": 0.9416666666666667
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 117,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 3,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4277
+            },
+            "public": {
+              "count": 120,
+              "masked": 3
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 217.4559929408133,
+              "latency_p95_ms": 225.03901498857883,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 113,
+              "fp": 8,
+              "fn": 7,
+              "precision": 0.9338842975206612,
+              "recall": 0.9416666666666667,
+              "f1": 0.9377593360995851
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 118,
+              "partially_masked_entities": 0,
+              "unmasked_entities": 2,
+              "gold_characters": 4416,
+              "masked_gold_characters": 4333
+            },
+            "public": {
+              "count": 120,
+              "masked": 3
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 404.94817681610584,
+              "latency_p95_ms": 415.2103531640023,
+              "peak_allocated_bytes": 1599921664,
+              "peak_reserved_bytes": 1839202304
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen35--full_document",
+        "key": "qwen35",
+        "name": "Qwen с NER-головой / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 233,
+          "fp": 307,
+          "fn": 247,
+          "precision": 0.43148148148148147,
+          "recall": 0.48541666666666666,
+          "f1": 0.4568627450980392
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 245,
+          "partially_masked_entities": 206,
+          "unmasked_entities": 29,
+          "gold_characters": 17664,
+          "masked_gold_characters": 12580
+        },
+        "public": {
+          "count": 480,
+          "masked": 0
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 59,
+              "fp": 76,
+              "fn": 61,
+              "precision": 0.43703703703703706,
+              "recall": 0.49166666666666664,
+              "f1": 0.4627450980392157
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 62,
+              "partially_masked_entities": 48,
+              "unmasked_entities": 10,
+              "gold_characters": 4416,
+              "masked_gold_characters": 3135
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 204.23389226198196,
+              "latency_p95_ms": 213.64679841790348,
+              "peak_allocated_bytes": 9038040064,
+              "peak_reserved_bytes": 26537361408
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 59,
+              "fp": 73,
+              "fn": 61,
+              "precision": 0.44696969696969696,
+              "recall": 0.49166666666666664,
+              "f1": 0.46825396825396826
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 62,
+              "partially_masked_entities": 49,
+              "unmasked_entities": 9,
+              "gold_characters": 4416,
+              "masked_gold_characters": 3165
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 459.9773974623531,
+              "latency_p95_ms": 468.6303265159949,
+              "peak_allocated_bytes": 9579687424,
+              "peak_reserved_bytes": 26537361408
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 57,
+              "fp": 82,
+              "fn": 63,
+              "precision": 0.41007194244604317,
+              "recall": 0.475,
+              "f1": 0.44015444015444016
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 60,
+              "partially_masked_entities": 55,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 3134
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1002.2525808308274,
+              "latency_p95_ms": 1010.3247170336545,
+              "peak_allocated_bytes": 10661594624,
+              "peak_reserved_bytes": 26537361408
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 58,
+              "fp": 76,
+              "fn": 62,
+              "precision": 0.43283582089552236,
+              "recall": 0.48333333333333334,
+              "f1": 0.4566929133858268
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 61,
+              "partially_masked_entities": 54,
+              "unmasked_entities": 5,
+              "gold_characters": 4416,
+              "masked_gold_characters": 3146
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 2168.6146243009716,
+              "latency_p95_ms": 2189.518084889278,
+              "peak_allocated_bytes": 12832936960,
+              "peak_reserved_bytes": 26537361408
+            }
+          }
+        }
+      },
+      {
+        "id": "gemma4--full_document",
+        "key": "gemma4",
+        "name": "Gemma с NER-головой / целый документ",
+        "mode": "full_document",
+        "status": "complete",
+        "metrics": {
+          "tp": 237,
+          "fp": 161,
+          "fn": 243,
+          "precision": 0.5954773869346733,
+          "recall": 0.49375,
+          "f1": 0.5398633257403189
+        },
+        "coverage": {
+          "gold_entities": 480,
+          "fully_masked_entities": 242,
+          "partially_masked_entities": 119,
+          "unmasked_entities": 119,
+          "gold_characters": 17664,
+          "masked_gold_characters": 10103
+        },
+        "public": {
+          "count": 480,
+          "masked": 0
+        },
+        "by_length": {
+          "1000": {
+            "metrics": {
+              "tp": 58,
+              "fp": 41,
+              "fn": 62,
+              "precision": 0.5858585858585859,
+              "recall": 0.48333333333333334,
+              "f1": 0.5296803652968036
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 58,
+              "partially_masked_entities": 33,
+              "unmasked_entities": 29,
+              "gold_characters": 4416,
+              "masked_gold_characters": 2640
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 184.0424935799092,
+              "latency_p95_ms": 186.14031369797885,
+              "peak_allocated_bytes": 9741667840,
+              "peak_reserved_bytes": 30536630272
+            }
+          },
+          "2000": {
+            "metrics": {
+              "tp": 61,
+              "fp": 41,
+              "fn": 59,
+              "precision": 0.5980392156862745,
+              "recall": 0.5083333333333333,
+              "f1": 0.5495495495495496
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 63,
+              "partially_masked_entities": 28,
+              "unmasked_entities": 29,
+              "gold_characters": 4416,
+              "masked_gold_characters": 2545
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 478.95368328318,
+              "latency_p95_ms": 490.49494655337185,
+              "peak_allocated_bytes": 10217027072,
+              "peak_reserved_bytes": 30536630272
+            }
+          },
+          "4000": {
+            "metrics": {
+              "tp": 60,
+              "fp": 41,
+              "fn": 60,
+              "precision": 0.594059405940594,
+              "recall": 0.5,
+              "f1": 0.5429864253393665
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 62,
+              "partially_masked_entities": 30,
+              "unmasked_entities": 28,
+              "gold_characters": 4416,
+              "masked_gold_characters": 2556
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 1500.9746050927788,
+              "latency_p95_ms": 1526.0925805196166,
+              "peak_allocated_bytes": 11245347840,
+              "peak_reserved_bytes": 30536630272
+            }
+          },
+          "8000": {
+            "metrics": {
+              "tp": 58,
+              "fp": 38,
+              "fn": 62,
+              "precision": 0.6041666666666666,
+              "recall": 0.48333333333333334,
+              "f1": 0.5370370370370371
+            },
+            "coverage": {
+              "gold_entities": 120,
+              "fully_masked_entities": 59,
+              "partially_masked_entities": 28,
+              "unmasked_entities": 33,
+              "gold_characters": 4416,
+              "masked_gold_characters": 2362
+            },
+            "public": {
+              "count": 120,
+              "masked": 0
+            },
+            "speed": {
+              "documents": 250,
+              "batch_size": 1,
+              "latency_p50_ms": 4982.310656458139,
+              "latency_p95_ms": 5031.236959667876,
+              "peak_allocated_bytes": 15314167296,
+              "peak_reserved_bytes": 32442941440
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen35_prompt--full_document",
+        "key": "qwen35_prompt",
+        "mode": "full_document",
+        "status": "not_started_user_scope",
+        "metrics": null,
+        "by_length": null
+      },
+      {
+        "id": "gemma4_prompt--full_document",
+        "key": "gemma4_prompt",
+        "mode": "full_document",
+        "status": "not_started_user_scope",
+        "metrics": null,
+        "by_length": null
+      }
+    ]
+  },
+  "limitations": [
+    "Синтетические зависимые семейства, один seed; выводы описательные.",
+    "Short test1000 and long test1000 are different corpora; F1 across them does not isolate length.",
+    "Thresholds/checkpoints selected on dev; short test reused in sequential extensions.",
+    "Long reference Qwen tokens differ from actual model input tokens; NER repeat2 approaches32K.",
+    "Later long-document configurations overlapped background result copying. CPU/disk/network load was not identical; small latency differences are not isolated effects of adapter type.",
+    "Allocated and reserved are separate PyTorch measurements, not minimum VRAM. No throughput inferred from latency.",
+    "DeepSeek branch is hard-label train annotation by teacher, not soft-logit distillation or model compression."
+  ],
+  "publication_export": {
+    "source_snapshot_sha256": "6f8dcdee78f52e03d785c8e636566779b042605caf692a052c32e0fe8dc92421",
+    "source_snapshot_bytes": 102970,
+    "kind": "selected compact result view",
+    "transformations": [
+      "Original source paths replaced with logical source IDs; their original SHA256 and sizes retained.",
+      "Display labels translated; numeric values, source arrays and statuses unchanged.",
+      "Exact operations timestamp removed from the background-load limitation."
+    ],
+    "not_included": [
+      "Raw per-document predictions and training checkpoints",
+      "Provider API responses and private operational journals"
+    ],
+    "scope": "No newly executed measurement; original completed experiments only."
+  }
+}
