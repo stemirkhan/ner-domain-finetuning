@@ -10,16 +10,16 @@
       "sha256": "18fc09b20c144ed161511cc80eb9c4543b2f89202571305f0096008c132e8803"
     },
     "README.md": {
-      "bytes": 5860,
-      "sha256": "eccea479ad32b684a98d79f2a56df5283fae3ca718d99232fea0bdaa8a8ecd06"
+      "bytes": 6501,
+      "sha256": "bcdf5c25cfe3e8f8211e1799b0def17e72f97cc226171e0afb69a51b66df0ea0"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 2210,
       "sha256": "b1877ccd6f9cec840d9652e8e942c6aaf0c22a75a630e07a63a9199d818e72af"
     },
     "assets/README.md": {
-      "bytes": 1037,
-      "sha256": "6e42d65fa7b32168c97466dae8fb06dae1eeac83ab8b53a42a764b79138c02ac"
+      "bytes": 1599,
+      "sha256": "4248143ebe1b5cda1e8b1867128953c245282d7b29e6a66e5ecdd5ca1248b7e8"
     },
     "assets/figures/chart-01-short-f1.png": {
       "bytes": 221925,
@@ -354,16 +354,16 @@
       "sha256": "2292b2d91a53eac05cdf8e19df9ffd193c6cb9e230bf74d171824353ed91227e"
     },
     "results/README.md": {
-      "bytes": 2056,
-      "sha256": "d1fc7b1d648700ca23f151abfe06b18734b34dd335b6b94b69610aeb70769b49"
+      "bytes": 2227,
+      "sha256": "0988f33824c14a5d119b34019c2645e8a469f5937542e8e077de4de4a83fe1fd"
     },
     "results/article-snapshot.json": {
       "bytes": 103833,
       "sha256": "f96a5d7ac3db99b6267e93a86d57b40bd30392f94fe4fb1f1131a22f162e742d"
     },
     "results/article-tables.md": {
-      "bytes": 2683,
-      "sha256": "a8fbf9171a3d4c247ad675698e51c442145e46c106db76f8da17202cd1d48bd5"
+      "bytes": 3067,
+      "sha256": "2f6da43b0bc584e917774047599d4f48bf0da8612964b482ee02c5332ffb935b"
     },
     "results/comparison.md": {
       "bytes": 3836,
@@ -376,6 +376,26 @@
     "tests/test_recipe.py": {
       "bytes": 4640,
       "sha256": "2eff095a728731486cb1d768c66a1395057628f476d0b8781f4425d3268edfce"
+    },
+    "assets/figures/table-05-short-quality.png": {
+      "bytes": 395312,
+      "sha256": "41ebc1710a2dcb458e648d0e21e06511dfa45c7716988cdf5b9b25b2d0930982"
+    },
+    "assets/figures/table-05-short-quality.svg": {
+      "bytes": 199956,
+      "sha256": "29cb0911fb74452e4e5bcb0948b8bfe0367ea234eae96a7bd77174e83e2e20e0"
+    },
+    "assets/figures/table-06-long-quality.png": {
+      "bytes": 753754,
+      "sha256": "7ab0d015d16739d3d44f52030c447670f2f758712c2e1c2451bd0c8819d13787"
+    },
+    "assets/figures/table-06-long-quality.svg": {
+      "bytes": 207503,
+      "sha256": "bc213698d237d93a3850593d26f2ecf5c5be6810a1959da044645e32c132f9b9"
+    },
+    "results/quality-metrics.md": {
+      "bytes": 5631,
+      "sha256": "9dc970f79c23f14905a296e37f0dda54afccc9c6c95af15c7d9f6ddf8a9db17e"
     }
   },
   "scope": "Selected public code, synthetic data, reports and illustrations; no model weights or private runtime configuration"
